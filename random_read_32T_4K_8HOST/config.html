@@ -1,0 +1,150 @@
+<title>Vdbench random_read_32T_4K_8HOST/config.html</title><pre>
+Output from script /root/vdbench50407/linux/config.sh: 
+
+Fri Mar 8 16:12:17 +07 2019
+>>>>>uname -a
+Linux host-10-233-233-72 3.10.0-957.el7.x86_64 #1 SMP Thu Oct 4 20:48:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Fri Mar 8 16:12:17 +07 2019
+>>>>>ifconfig -a
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.233.233.72  netmask 255.255.255.0  broadcast 10.233.233.255
+        inet6 fe80::f816:3eff:fe4a:33f3  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:4a:33:f3  txqueuelen 1000  (Ethernet)
+        RX packets 669176  bytes 4635177450 (4.3 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 574363  bytes 52239959 (49.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 34207  bytes 5704272 (5.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34207  bytes 5704272 (5.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:c4:6a:96  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 52:54:00:c4:6a:96  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Fri Mar 8 16:12:17 +07 2019
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Fri Mar 8 16:12:17 +07 2019
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=65912908k,nr_inodes=16478227,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+/dev/vda2 on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=36,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=39467)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
+/dev/vda3 on /var type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/vda5 on /home type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/vda6 on /var/log type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/vda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=13185732k,mode=700,uid=42,gid=42)
+/root/rhel-server-7.6-x86_64-dvd.iso on /mnt/repo-cdrom type iso9660 (ro,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=13185732k,mode=700,uid=1000,gid=1000)
+Fri Mar 8 16:12:17 +07 2019
+>>>>>memory
+MemTotal:       131857308 kB
+MemFree:         1056240 kB
+MemAvailable:   129392376 kB
+Buffers:            2872 kB
+Cached:         125278524 kB
+SwapCached:            0 kB
+Active:          5181296 kB
+Inactive:       120582952 kB
+Active(anon):     484052 kB
+Inactive(anon):    12096 kB
+Active(file):    4697244 kB
+Inactive(file): 120570856 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        387752 kB
+Mapped:           110696 kB
+Shmem:             12808 kB
+Slab:            4078100 kB
+SReclaimable:    3857932 kB
+SUnreclaim:       220168 kB
+KernelStack:       13232 kB
+PageTables:        23200 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    65928652 kB
+Committed_AS:    3746056 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      264400 kB
+VmallocChunk:   34359461884 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    135168 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      280064 kB
+DirectMap2M:    12302336 kB
+DirectMap1G:    123731968 kB
+              total        used        free      shared  buff/cache   available
+Mem:      131857308     1441572     1056240       12808   129359496   129392376
+Low:      131857308   130801068     1056240
+High:             0           0           0
+Swap:             0           0           0
+Fri Mar 8 16:12:17 +07 2019
+>>>>>ps -ef | grep -i vdb
+root     32889 32587  0 16:12 pts/0    00:00:00 /bin/bash ./vdbench -f multihost.param -o random_read_32T_4K_8HOST
+root     32891 32889 57 16:12 pts/0    00:00:01 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f multihost.param -o random_read_32T_4K_8HOST
+root     32956 32891  0 16:12 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.12.16.230 -l n1-0 -p 5570
+root     32960 32956 47 16:12 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.12.16.230 -l n1-0 -p 5570
+root     32963 32891  2 16:12 pts/0    00:00:00 ssh 10.233.233.37 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.37-11-190308-16.12.16.230 -l n2-0 -p 5570
+root     33002 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-12-190308-16.12.16.230 -l n3-0 -p 5570
+root     33010 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.39 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.39-13-190308-16.12.16.230 -l n4-0 -p 5570
+root     33031 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-14-190308-16.12.16.230 -l n5-0 -p 5570
+root     33038 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.187 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.187-15-190308-16.12.16.230 -l n6-0 -p 5570
+root     33043 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-16-190308-16.12.16.230 -l n7-0 -p 5570
+root     33048 32891  1 16:12 pts/0    00:00:00 ssh 10.233.233.211 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.211-17-190308-16.12.16.230 -l n8-0 -p 5570
+root     33070 32891  0 16:12 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/random_read_32T_4K_8HOST n1 n2 n3 n4 n5 n6 n7 n8
+root     33086 33070  0 16:12 pts/0    00:00:00 grep -i vdb
+

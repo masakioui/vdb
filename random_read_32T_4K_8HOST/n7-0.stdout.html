@@ -1,0 +1,99 @@
+<title>Vdbench random_read_32T_4K_8HOST/n7-0.stdout.html</title><pre>
+stdout/stderr for slave=n7-0
+
+16:12:17.530 16:12:18.262 SlaveJvm execution parameter:  '-m 10.233.233.72'
+16:12:17.531 16:12:18.262 SlaveJvm execution parameter:  '-n 10.233.233.188-16-190308-16.12.16.230'
+16:12:17.531 16:12:18.262 SlaveJvm execution parameter:  '-l n7-0'
+16:12:17.531 16:12:18.263 SlaveJvm execution parameter:  '-p 5570'
+16:12:17.531 16:12:18.263 SlaveJvm positional parameter: 'SlaveJvm'
+16:12:17.648 16:12:18.378 successfully connected to master 10.233.233.72
+16:12:17.648 16:12:18.379 Connection to 10.233.233.72 using port 5570 successful
+16:12:17.718 16:12:18.446 ticks_per_second: 100
+16:12:17.720 16:12:18.452 execute(): ls -l /var/log/oceanstor
+16:12:17.742 16:12:18.474 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_305623748">rd1 For loops: None</A>
+
+16:12:17.936 16:12:18.667 Beginning of run setup
+16:12:17.936 16:12:18.668 **********************
+16:12:17.936 
+16:12:17.936 
+16:12:17.956 16:12:18.685 File '/var/log/messages.1' does not exist. Monitoring bypassed
+16:12:18.001 16:12:18.733 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+16:12:18.026 16:12:18.758 Completed the creation of the directory list for /var/log/oceanstor: 176 directories.
+16:12:18.929 16:12:19.661 Generated 66,000 file names; total anchor size: 200.860g (215,671,375,317)
+16:12:18.929 16:12:19.661 During anchor creation for anchor=/var/log/oceanstor there were 176 directories and 66000 files
+16:12:18.929 16:12:19.662 Completed initializeFileAnchor for fsd1: 0.93
+16:12:18.939 16:12:19.671 Started 4 threads for fwd=fwd1,fsd=fsd1,operation=read
+16:12:18.939 16:12:19.671 Started 4 FwgThreads for rd=rd1 For loops: None
+16:12:18.939 16:12:19.671 Waiting for task synchronization
+16:12:18.939 16:12:19.671 Requesting full garbage collection
+16:12:18.940 16:12:19.672 GcTracker: cum:   5 intv:  5 ms:     155 mss:  0.00% Heap_MB max:   911 curr:   221 used:    49 free:   171 
+16:12:18.998 16:12:19.730 GcTracker: cum:   7 intv:  2 ms:      56 mss:  0.00% Heap_MB max:   911 curr:   361 used:    28 free:   333 
+16:12:18.998 16:12:19.730 task_wait_start_complete() end
+
+<a name="_305623748"></a><i><b>16:12:20.001 Starting RD=rd1; elapsed=300; fwdrate=max. For loops: None</b></i>
+
+16:12:20.003 16:12:20.735 task_run_all(): 5 tasks
+16:12:20.676 16:12:21.407 16:12:21.407 op: read   lun: /var/log/oceanstor/vdb.1_39.dir/vdb_f14602.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.677 16:12:21.409 Read error using file /var/log/oceanstor/vdb.1_39.dir/vdb_f14602.file
+16:12:20.677 Error:         EINVAL: 'Invalid argument'
+16:12:20.677 lba:           1675264
+16:12:20.677 xfersize:      2457
+16:12:20.677 blocks_done:   409
+16:12:20.677 bytes_done:    1675264
+16:12:20.677 open_for_read: true
+16:12:20.677 fhandle:       17
+16:12:20.677 16:12:21.409 16:12:21.409 Read error using file /var/log/oceanstor/vdb.1_39.dir/vdb_f14602.file
+16:12:20.677 Error:         EINVAL: 'Invalid argument'
+16:12:20.677 lba:           1675264
+16:12:20.677 xfersize:      2457
+16:12:20.677 blocks_done:   409
+16:12:20.677 bytes_done:    1675264
+16:12:20.677 open_for_read: true
+16:12:20.677 fhandle:       17
+16:12:20.679 16:12:21.410 16:12:21.409 op: read   lun: /var/log/oceanstor/vdb.1_8.dir/vdb_f2965.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.679 16:12:21.411 Read error using file /var/log/oceanstor/vdb.1_8.dir/vdb_f2965.file
+16:12:20.679 Error:         EINVAL: 'Invalid argument'
+16:12:20.679 lba:           1675264
+16:12:20.679 xfersize:      2457
+16:12:20.679 blocks_done:   409
+16:12:20.679 bytes_done:    1675264
+16:12:20.679 open_for_read: true
+16:12:20.679 fhandle:       15
+16:12:20.679 16:12:21.412 16:12:21.411 Read error using file /var/log/oceanstor/vdb.1_8.dir/vdb_f2965.file
+16:12:20.679 Error:         EINVAL: 'Invalid argument'
+16:12:20.679 lba:           1675264
+16:12:20.679 xfersize:      2457
+16:12:20.679 blocks_done:   409
+16:12:20.679 bytes_done:    1675264
+16:12:20.679 open_for_read: true
+16:12:20.679 fhandle:       15
+16:12:20.780 16:12:21.512 16:12:21.512 op: read   lun: /var/log/oceanstor/vdb.1_49.dir/vdb_f18116.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.782 16:12:21.514 Read error using file /var/log/oceanstor/vdb.1_49.dir/vdb_f18116.file
+16:12:20.782 Error:         EINVAL: 'Invalid argument'
+16:12:20.782 lba:           4403200
+16:12:20.782 xfersize:      819
+16:12:20.782 blocks_done:   1075
+16:12:20.782 bytes_done:    4403200
+16:12:20.782 open_for_read: true
+16:12:20.782 fhandle:       14
+16:12:20.782 16:12:21.514 16:12:21.514 Read error using file /var/log/oceanstor/vdb.1_49.dir/vdb_f18116.file
+16:12:20.782 Error:         EINVAL: 'Invalid argument'
+16:12:20.782 lba:           4403200
+16:12:20.783 xfersize:      819
+16:12:20.783 blocks_done:   1075
+16:12:20.783 bytes_done:    4403200
+16:12:20.783 open_for_read: true
+16:12:20.783 fhandle:       14
+16:12:21.014 16:12:21.746 
+16:12:21.014 16:12:21.746 Miscellaneous statistics:
+16:12:21.015 16:12:21.747 READ_OPENS          Files opened for read activity:                   7
+16:12:21.015 16:12:21.747 FILE_CLOSES         Close requests:                                   7
+16:12:21.015 16:12:21.747 
+16:12:21.015 16:12:21.747 Java Heap in MB. max:  910.500; current:  361.000; used:   61.210; free:  299.790
+16:12:21.015 16:12:21.747 Maximum native memory allocation:       16,384; Current allocation:       16,384
+16:12:21.015 16:12:21.747 End of run
+16:12:21.015 16:12:21.747 **********
+16:12:21.015 
+16:12:21.015 

@@ -1,0 +1,345 @@
+<title>Vdbench random_read_32T_4K_8HOST/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+16:12:16.267 input argument scanned: '-fmultihost.param'
+16:12:16.268 input argument scanned: '-orandom_read_32T_4K_8HOST'
+16:12:16.268 java.vendor                   Oracle Corporation
+16:12:16.268 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64/jre
+16:12:16.268 java.vm.specification.version 1.8
+16:12:16.268 java.vm.version               25.181-b13
+16:12:16.268 java.vm.vendor                Oracle Corporation
+16:12:16.268 java.specification.version    1.8
+16:12:16.268 java.class.version            52.0
+16:12:16.268 user.name                     root
+16:12:16.268 user.dir                      /root/vdbench50407
+16:12:16.268 java.io.tmpdir                /tmp
+16:12:16.268 java.class.path               ./:./classes:./vdbench.jar
+16:12:16.268 os.name                       Linux
+16:12:16.268 os.arch                       amd64
+16:12:16.268 os.version                    3.10.0-957.el7.x86_64
+16:12:16.268 sun.arch.data.model           64
+16:12:16.271 Flushing all reports
+16:12:16.315 Creating anchor for /var/log/oceanstor,fsd=fsd1
+16:12:16.368 Anchor size: anchor=/var/log/oceanstor: dirs:          176; files:      528,000; bytes:     1.568t (1,723,877,146,771)
+16:12:16.603 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.12.16.230 -l n1-0 -p 5570   
+16:12:16.617 Starting slave: ssh 10.233.233.37 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.37-11-190308-16.12.16.230 -l n2-0 -p 5570   
+16:12:16.637 Starting slave: ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-12-190308-16.12.16.230 -l n3-0 -p 5570   
+16:12:16.657 Starting slave: ssh 10.233.233.39 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.39-13-190308-16.12.16.230 -l n4-0 -p 5570   
+16:12:16.678 Starting slave: ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-14-190308-16.12.16.230 -l n5-0 -p 5570   
+16:12:16.698 Starting slave: ssh 10.233.233.187 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.187-15-190308-16.12.16.230 -l n6-0 -p 5570   
+16:12:16.719 Starting slave: ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-16-190308-16.12.16.230 -l n7-0 -p 5570   
+16:12:16.739 Starting slave: ssh 10.233.233.211 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.211-17-190308-16.12.16.230 -l n8-0 -p 5570   
+16:12:16.854 Slave n1-0 (pid  32960) connected to master 32891
+16:12:17.240 Slave n2-0 (pid  26055) connected to master 32891
+16:12:17.253 Slave n3-0 (pid  25293) connected to master 32891
+16:12:17.306 Slave n4-0 (pid  25481) connected to master 32891
+16:12:17.394 Slave n8-0 (pid  25421) connected to master 32891
+16:12:17.585 Slave n5-0 (pid  25395) connected to master 32891
+16:12:17.625 Slave n6-0 (pid  25390) connected to master 32891
+16:12:17.672 Slave n7-0 (pid  25220) connected to master 32891
+16:12:17.682 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_305623748">rd1 For loops: None</A>
+
+16:12:17.847 Flushing all reports
+16:12:17.848 slv=n1-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n2-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n3-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n4-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n5-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n6-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.848 slv=n7-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.849 slv=n8-0 fwd=fwd1 fsd=fsd1 anchor=/var/log/oceanstor threads= 4 skew= 0.00 operation=read 
+16:12:17.887 Waiting for synchronization of all slaves
+16:12:19.191 Synchronization of all slaves complete
+
+<a name="_305623748"></a><i><b>16:12:20.001 Starting RD=rd1; elapsed=300; fwdrate=max. For loops: None</b></i>
+
+16:12:20.605 16:12:20.605 n4-0: 16:12:20.786 op: read   lun: /var/log/oceanstor/vdb.1_46.dir/vdb_f17009.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.607 16:12:20.607 n4-0: 16:12:20.788 Read error using file /var/log/oceanstor/vdb.1_46.dir/vdb_f17009.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       16
+16:12:20.607 16:12:20.607 n5-0: 16:12:21.185 op: read   lun: /var/log/oceanstor/vdb.1_149.dir/vdb_f55789.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.609 16:12:20.609 n5-0: 16:12:21.187 Read error using file /var/log/oceanstor/vdb.1_149.dir/vdb_f55789.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       15
+16:12:20.635 16:12:20.635 n6-0: 16:12:21.406 op: read   lun: /var/log/oceanstor/vdb.1_99.dir/vdb_f36977.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.637 16:12:20.637 n6-0: 16:12:21.409 Read error using file /var/log/oceanstor/vdb.1_99.dir/vdb_f36977.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       16
+16:12:20.650 16:12:20.650 n1-0: 16:12:20.649 op: read   lun: /var/log/oceanstor/vdb.1_95.dir/vdb_f35340.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.652 16:12:20.652 n1-0: 16:12:20.651 Read error using file /var/log/oceanstor/vdb.1_95.dir/vdb_f35340.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       16
+16:12:20.656 16:12:20.656 n5-0: 16:12:21.235 op: read   lun: /var/log/oceanstor/vdb.1_135.dir/vdb_f50337.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.657 16:12:20.657 n5-0: 16:12:21.236 Read error using file /var/log/oceanstor/vdb.1_135.dir/vdb_f50337.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       16
+16:12:20.663 16:12:20.663 n6-0: 16:12:21.434 op: read   lun: /var/log/oceanstor/vdb.1_13.dir/vdb_f4771.file lba:      2723840 0x00299000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.664 16:12:20.664 n6-0: 16:12:21.436 Read error using file /var/log/oceanstor/vdb.1_13.dir/vdb_f4771.file
+Error:         EINVAL: 'Invalid argument'
+lba:           2723840
+xfersize:      2457
+blocks_done:   665
+bytes_done:    2723840
+open_for_read: true
+fhandle:       15
+16:12:20.665 16:12:20.665 n8-0: 16:12:21.443 op: read   lun: /var/log/oceanstor/vdb.1_102.dir/vdb_f38016.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.667 16:12:20.667 n8-0: 16:12:21.445 Read error using file /var/log/oceanstor/vdb.1_102.dir/vdb_f38016.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       14
+16:12:20.675 16:12:20.675 n7-0: 16:12:21.407 op: read   lun: /var/log/oceanstor/vdb.1_39.dir/vdb_f14602.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.676 16:12:20.676 n4-0: 16:12:20.858 op: read   lun: /var/log/oceanstor/vdb.1_78.dir/vdb_f29159.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.677 16:12:20.677 n7-0: 16:12:21.409 Read error using file /var/log/oceanstor/vdb.1_39.dir/vdb_f14602.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       17
+16:12:20.678 16:12:20.678 n7-0: 16:12:21.409 op: read   lun: /var/log/oceanstor/vdb.1_8.dir/vdb_f2965.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.678 16:12:20.678 n2-0: 16:12:21.305 op: read   lun: /var/log/oceanstor/vdb.1_133.dir/vdb_f49753.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.678 16:12:20.678 n4-0: 16:12:20.859 Read error using file /var/log/oceanstor/vdb.1_78.dir/vdb_f29159.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       17
+16:12:20.680 16:12:20.679 n7-0: 16:12:21.411 Read error using file /var/log/oceanstor/vdb.1_8.dir/vdb_f2965.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       15
+16:12:20.680 16:12:20.680 n2-0: 16:12:21.308 Read error using file /var/log/oceanstor/vdb.1_133.dir/vdb_f49753.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       17
+16:12:20.681 16:12:20.681 n2-0: 16:12:21.309 op: read   lun: /var/log/oceanstor/vdb.1_4.dir/vdb_f1461.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.682 16:12:20.682 n2-0: 16:12:21.310 Read error using file /var/log/oceanstor/vdb.1_4.dir/vdb_f1461.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       15
+16:12:20.701 16:12:20.701 n6-0: 16:12:21.473 op: read   lun: /var/log/oceanstor/vdb.1_100.dir/vdb_f37148.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.702 16:12:20.702 n6-0: 16:12:21.474 Read error using file /var/log/oceanstor/vdb.1_100.dir/vdb_f37148.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       17
+16:12:20.708 16:12:20.708 n1-0: 16:12:20.708 op: read   lun: /var/log/oceanstor/vdb.1_61.dir/vdb_f22854.file lba:      2723840 0x00299000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.710 16:12:20.710 n1-0: 16:12:20.709 Read error using file /var/log/oceanstor/vdb.1_61.dir/vdb_f22854.file
+Error:         EINVAL: 'Invalid argument'
+lba:           2723840
+xfersize:      2457
+blocks_done:   665
+bytes_done:    2723840
+open_for_read: true
+fhandle:       14
+16:12:20.724 16:12:20.724 n8-0: 16:12:21.502 op: read   lun: /var/log/oceanstor/vdb.1_165.dir/vdb_f61583.file lba:      2723840 0x00299000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.726 16:12:20.726 n8-0: 16:12:21.504 Read error using file /var/log/oceanstor/vdb.1_165.dir/vdb_f61583.file
+Error:         EINVAL: 'Invalid argument'
+lba:           2723840
+xfersize:      2457
+blocks_done:   665
+bytes_done:    2723840
+open_for_read: true
+fhandle:       17
+16:12:20.777 16:12:20.777 n4-0: 16:12:20.959 op: read   lun: /var/log/oceanstor/vdb.1_126.dir/vdb_f47086.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.779 16:12:20.779 n4-0: 16:12:20.960 Read error using file /var/log/oceanstor/vdb.1_126.dir/vdb_f47086.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       15
+16:12:20.780 16:12:20.780 n1-0: 16:12:20.779 op: read   lun: /var/log/oceanstor/vdb.1_98.dir/vdb_f36711.file lba:      2723840 0x00299000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.780 16:12:20.780 n7-0: 16:12:21.512 op: read   lun: /var/log/oceanstor/vdb.1_49.dir/vdb_f18116.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.782 16:12:20.782 n1-0: 16:12:20.781 Read error using file /var/log/oceanstor/vdb.1_98.dir/vdb_f36711.file
+Error:         EINVAL: 'Invalid argument'
+lba:           2723840
+xfersize:      2457
+blocks_done:   665
+bytes_done:    2723840
+open_for_read: true
+fhandle:       15
+16:12:20.782 16:12:20.782 n7-0: 16:12:21.514 Read error using file /var/log/oceanstor/vdb.1_49.dir/vdb_f18116.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       14
+16:12:20.800 16:12:20.799 n6-0: 16:12:21.571 op: read   lun: /var/log/oceanstor/vdb.1_80.dir/vdb_f29763.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.801 16:12:20.801 n6-0: 16:12:21.572 Read error using file /var/log/oceanstor/vdb.1_80.dir/vdb_f29763.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       14
+16:12:20.807 16:12:20.807 n3-0: 16:12:22.841 op: read   lun: /var/log/oceanstor/vdb.1_9.dir/vdb_f3149.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.809 16:12:20.809 n3-0: 16:12:22.843 Read error using file /var/log/oceanstor/vdb.1_9.dir/vdb_f3149.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       16
+16:12:20.815 16:12:20.815 n4-0: 16:12:20.997 op: read   lun: /var/log/oceanstor/vdb.1_103.dir/vdb_f38593.file lba:      1675264 0x00199000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.817 16:12:20.817 n4-0: 16:12:20.998 Read error using file /var/log/oceanstor/vdb.1_103.dir/vdb_f38593.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1675264
+xfersize:      2457
+blocks_done:   409
+bytes_done:    1675264
+open_for_read: true
+fhandle:       16
+16:12:20.822 16:12:20.822 n6-0: 16:12:21.593 op: read   lun: /var/log/oceanstor/vdb.1_116.dir/vdb_f43153.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.824 16:12:20.824 n6-0: 16:12:21.596 Read error using file /var/log/oceanstor/vdb.1_116.dir/vdb_f43153.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       16
+16:12:20.829 16:12:20.829 n2-0: 16:12:21.458 op: read   lun: /var/log/oceanstor/vdb.1_115.dir/vdb_f43015.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.831 16:12:20.831 n1-0: 16:12:20.831 op: read   lun: /var/log/oceanstor/vdb.1_147.dir/vdb_f54783.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.831 16:12:20.831 n2-0: 16:12:21.460 op: read   lun: /var/log/oceanstor/vdb.1_169.dir/vdb_f63154.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.832 16:12:20.832 n2-0: 16:12:21.460 Read error using file /var/log/oceanstor/vdb.1_115.dir/vdb_f43015.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       16
+16:12:20.833 16:12:20.833 n1-0: 16:12:20.832 Read error using file /var/log/oceanstor/vdb.1_147.dir/vdb_f54783.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       16
+16:12:20.834 16:12:20.834 n2-0: 16:12:21.462 Read error using file /var/log/oceanstor/vdb.1_169.dir/vdb_f63154.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       14
+16:12:20.843 16:12:20.843 n3-0: 16:12:22.877 op: read   lun: /var/log/oceanstor/vdb.1_1.dir/vdb_f0118.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.844 16:12:20.844 n5-0: 16:12:21.422 op: read   lun: /var/log/oceanstor/vdb.1_133.dir/vdb_f49664.file lba:      4403200 0x00433000 xfer:      819 errno: EINVAL: 'Invalid argument' 
+16:12:20.845 16:12:20.845 n3-0: 16:12:22.878 Read error using file /var/log/oceanstor/vdb.1_1.dir/vdb_f0118.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       15
+16:12:20.845 16:12:20.845 n5-0: 16:12:21.424 Read error using file /var/log/oceanstor/vdb.1_133.dir/vdb_f49664.file
+Error:         EINVAL: 'Invalid argument'
+lba:           4403200
+xfersize:      819
+blocks_done:   1075
+bytes_done:    4403200
+open_for_read: true
+fhandle:       14
+16:12:20.849 16:12:20.849 n8-0: 16:12:21.627 op: read   lun: /var/log/oceanstor/vdb.1_67.dir/vdb_f25018.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.850 16:12:20.850 n8-0: 16:12:21.628 Read error using file /var/log/oceanstor/vdb.1_67.dir/vdb_f25018.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       14
+16:12:20.855 16:12:20.855 n4-0: 16:12:21.036 op: read   lun: /var/log/oceanstor/vdb.1_92.dir/vdb_f34422.file lba:      1150976 0x00119000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.856 16:12:20.856 n4-0: 16:12:21.038 Read error using file /var/log/oceanstor/vdb.1_92.dir/vdb_f34422.file
+Error:         EINVAL: 'Invalid argument'
+lba:           1150976
+xfersize:      2457
+blocks_done:   281
+bytes_done:    1150976
+open_for_read: true
+fhandle:       17
+16:12:20.893 16:12:20.893 n5-0: 16:12:21.471 op: read   lun: /var/log/oceanstor/vdb.1_34.dir/vdb_f12526.file lba:      2723840 0x00299000 xfer:     2457 errno: EINVAL: 'Invalid argument' 
+16:12:20.894 16:12:20.894 n5-0: 16:12:21.473 Read error using file /var/log/oceanstor/vdb.1_34.dir/vdb_f12526.file
+Error:         EINVAL: 'Invalid argument'
+lba:           2723840
+xfersize:      2457
+blocks_done:   665
+bytes_done:    2723840
+open_for_read: true
+fhandle:       15
+16:12:21.411 killCommand: /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.12.16.230 -l n1-0 -p 5570
+16:12:21.412 killCommand: ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-12-190308-16.12.16.230 -l n3-0 -p 5570
+16:12:21.412 killCommand: ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-14-190308-16.12.16.230 -l n5-0 -p 5570
+16:12:21.412 killCommand: ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-16-190308-16.12.16.230 -l n7-0 -p 5570
+16:12:21.412 
+16:12:21.412 'data_errors=50' requested. Abort rd=rd1 after last error.
+16:12:21.412 
+16:12:21.412 removeKillAtEnd(): Unable to find /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.12.16.230 -l n1-0 -p 5570
+16:12:21.413 removeKillAtEnd(): Unable to find ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-12-190308-16.12.16.230 -l n3-0 -p 5570
+16:12:21.413 removeKillAtEnd(): Unable to find ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-14-190308-16.12.16.230 -l n5-0 -p 5570
+java.lang.RuntimeException: 'data_errors=50' requested. Abort rd=rd1 after last error.
+16:12:21.413 removeKillAtEnd(): Unable to find ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-16-190308-16.12.16.230 -l n7-0 -p 5570
+	at Vdb.common.failure(common.java:350)
+	at Vdb.common.failure(common.java:297)
+	at Vdb.ErrorLog.countErrorsOnMaster(ErrorLog.java:224)
+	at Vdb.SlaveOnMaster.processSlave(SlaveOnMaster.java:207)
+	at Vdb.SlaveOnMaster.run(SlaveOnMaster.java:42)
