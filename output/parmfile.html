@@ -1,0 +1,30 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: /root/vdbench50407/multihost.param
+
+*Example 7: File system testing
+
+hd=default,vdbench=/root/vdbench50407,user=root,shell=ssh,master=10.233.233.72
+
+hd=n1,system=10.233.233.72
+hd=n2,system=10.233.233.37
+hd=n3,system=10.233.233.146
+hd=n4,system=10.233.233.39
+hd=n5,system=10.233.233.253
+hd=n6,system=10.233.233.187
+hd=n7,system=10.233.233.188
+hd=n8,system=10.233.233.211
+
+
+#fsd=fsd1,anchor=/var/log/oceanstor,depth=2,width=2,files=2,size=128k
+fsd=fsd1,anchor=/var/log/oceanstor,depth=1,width=22,files=3000,size=(6216k,20,1.1m,20,1.6m,20,2.6m,20,4.2m,20),shared=yes
+
+fwd=fwd1,fsd=fsd1,operation=read,xfersize=4k,fileio=sequential,fileselect=random,threads=32
+
+
+# This removes the old file structure
+rd=rd1,fwd=fwd1,fwdrate=max,format=(clean,only),elapsed=10,interval=1
+# This recreates the new file structure
+#rd=rd1,fwd=fwd1,fwdrate=max,format=(restart,only),elapsed=300,interval=1
+#
+#rd=rd1,fwd=fwd1,fwdrate=max,format=no,elapsed=300,interval=1

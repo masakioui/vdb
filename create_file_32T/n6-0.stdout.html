@@ -1,0 +1,53 @@
+<title>Vdbench create_file_32T/n6-0.stdout.html</title><pre>
+stdout/stderr for slave=n6-0
+
+15:14:53.596 15:14:54.340 SlaveJvm execution parameter:  '-m 10.233.233.72'
+15:14:53.597 15:14:54.341 SlaveJvm execution parameter:  '-n 10.233.233.187-15-190308-15.14.52.822'
+15:14:53.597 15:14:54.341 SlaveJvm execution parameter:  '-l n6-0'
+15:14:53.597 15:14:54.341 SlaveJvm execution parameter:  '-p 5570'
+15:14:53.597 15:14:54.341 SlaveJvm positional parameter: 'SlaveJvm'
+15:14:53.702 15:14:54.445 successfully connected to master 10.233.233.72
+15:14:53.702 15:14:54.446 Connection to 10.233.233.72 using port 5570 successful
+15:14:53.808 15:14:54.552 ticks_per_second: 100
+15:14:53.814 15:14:54.559 execute(): ls -l /var/log/oceanstor
+15:14:53.835 15:14:54.579 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_1763847188">format_for_rd1 For loops: None</A>
+
+15:14:54.008 15:14:54.753 Beginning of run setup
+15:14:54.008 15:14:54.753 **********************
+15:14:54.009 
+15:14:54.009 
+15:14:54.026 15:14:54.769 File '/var/log/messages.1' does not exist. Monitoring bypassed
+15:14:54.069 15:14:54.814 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+15:14:54.078 15:14:54.822 Completed the creation of the directory list for /var/log/oceanstor: 22 directories.
+15:14:54.088 15:14:54.832 Generated 8,250 file names; total anchor size: 25.102g (26,953,162,713)
+15:14:54.088 15:14:54.833 Completed initializeFileAnchor for fsd1: 0.02
+15:14:54.109 15:14:54.853 Started 8 threads for fwd=format,fsd=fsd1
+15:14:54.109 15:14:54.853 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+15:14:54.109 15:14:54.853 Waiting for task synchronization
+15:14:54.109 15:14:54.853 Requesting full garbage collection
+15:14:54.109 15:14:54.854 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   123 used:    31 free:    92 
+15:14:54.193 15:14:54.938 GcTracker: cum:   2 intv:  2 ms:      82 mss:  0.00% Heap_MB max:   911 curr:   123 used:    18 free:   105 
+15:14:54.193 15:14:54.938 task_wait_start_complete() end
+
+<a name="_1763847188"></a><i><b>15:14:55.001 Starting RD=format_for_rd1</b></i>
+
+15:14:55.003 15:14:55.748 task_run_all(): 9 tasks
+15:14:55.193 15:14:55.937 Message to master: anchor=/var/log/oceanstor mkdir complete.
+15:14:57.963 15:14:58.707 Message to master: anchor=/var/log/oceanstor create complete.
+15:14:58.067 15:14:58.811 
+15:14:58.067 15:14:58.811 Miscellaneous statistics:
+15:14:58.067 15:14:58.811 FILE_CREATES        Files created:                                8,250
+15:14:58.067 15:14:58.812 DIRECTORY_CREATES   Directories created:                             22
+15:14:58.067 15:14:58.812 WRITE_OPENS         Files opened for write activity:              8,250
+15:14:58.067 15:14:58.812 FILE_CLOSES         Close requests:                               8,250
+15:14:58.067 15:14:58.812 
+15:14:58.067 15:14:58.812 Java Heap in MB. max:  910.500; current:  123.000; used:   41.914; free:   81.086
+15:14:58.068 15:14:58.812 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+15:14:59.104 15:14:59.848 End of run
+15:14:59.104 15:14:59.849 **********
+15:14:59.104 
+15:14:59.104 
+15:14:59.925 15:15:00.669 Master is requesting slave shutdown
+15:14:59.925 15:15:00.670 Java Heap in MB. max:  910.500; current:  123.000; used:   42.609; free:   80.391

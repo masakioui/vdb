@@ -1,0 +1,104 @@
+<title>Vdbench create_file_32T_new/n1-0.stdout.html</title><pre>
+stdout/stderr for slave=n1-0
+
+15:18:46.282 15:18:46.281 SlaveJvm execution parameter:  '-m 10.233.233.72'
+15:18:46.282 15:18:46.281 SlaveJvm execution parameter:  '-n 10.233.233.72-10-190308-15.18.45.800'
+15:18:46.282 15:18:46.281 SlaveJvm execution parameter:  '-l n1-0'
+15:18:46.282 15:18:46.281 SlaveJvm execution parameter:  '-p 5570'
+15:18:46.282 15:18:46.281 SlaveJvm positional parameter: 'SlaveJvm'
+15:18:46.385 15:18:46.384 successfully connected to master 10.233.233.72
+15:18:46.386 15:18:46.385 Connection to 10.233.233.72 using port 5570 successful
+15:18:46.913 15:18:46.913 ticks_per_second: 100
+15:18:46.927 15:18:46.919 execute(): ls -l /var/log/oceanstor
+15:18:46.939 15:18:46.939 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_1763847188">format_for_rd1 For loops: None</A>
+
+15:18:47.106 15:18:47.106 Beginning of run setup
+15:18:47.107 15:18:47.106 **********************
+15:18:47.107 
+15:18:47.107 
+15:18:47.122 15:18:47.122 File '/var/log/messages.1' does not exist. Monitoring bypassed
+15:18:47.166 15:18:47.166 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+15:18:47.191 15:18:47.191 Completed the creation of the directory list for /var/log/oceanstor: 176 directories.
+15:18:47.251 15:18:47.251 Generated 66,000 file names; total anchor size: 200.839g (215,649,206,098)
+15:18:47.252 15:18:47.251 Completed initializeFileAnchor for fsd1: 0.09
+15:18:47.272 15:18:47.272 Started 8 threads for fwd=format,fsd=fsd1
+15:18:47.272 15:18:47.272 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+15:18:47.272 15:18:47.272 Waiting for task synchronization
+15:18:47.273 15:18:47.272 Requesting full garbage collection
+15:18:47.273 15:18:47.273 GcTracker: cum:   1 intv:  1 ms:      10 mss:  0.00% Heap_MB max:   911 curr:   123 used:    25 free:    98 
+15:18:47.382 15:18:47.381 GcTracker: cum:   3 intv:  2 ms:     108 mss:  0.00% Heap_MB max:   911 curr:   123 used:    23 free:   100 
+15:18:47.382 15:18:47.382 task_wait_start_complete() end
+
+<a name="_1763847188"></a><i><b>15:18:48.001 Starting RD=format_for_rd1</b></i>
+
+15:18:48.003 15:18:48.003 task_run_all(): 9 tasks
+15:18:48.275 15:18:48.274 Message to master: anchor=/var/log/oceanstor mkdir complete.
+15:19:07.157 15:19:07.156 Message to master: anchor=/var/log/oceanstor: Created 11,220 of 66,000 files (17.00%)
+15:19:32.103 15:19:32.102 Message to master: anchor=/var/log/oceanstor: Created 12,540 of 66,000 files (19.00%)
+15:19:51.685 15:19:51.685 Message to master: anchor=/var/log/oceanstor: Created 13,860 of 66,000 files (21.00%)
+15:20:02.127 15:20:02.127 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:20:02.127 15:20:02.127 sendMessageToConsole: /var/log/messages: Mar  8 15:20:01 host-10-233-233-72 systemd: Created slice User Slice of root.
+15:20:02.128 15:20:02.127 sendMessageToConsole: /var/log/messages: Mar  8 15:20:01 host-10-233-233-72 systemd: Started Session 179 of user root.
+15:20:02.128 15:20:02.127 sendMessageToConsole: /var/log/messages: Mar  8 15:20:01 host-10-233-233-72 systemd: Removed slice User Slice of root.
+15:20:02.128 15:20:02.127 sendMessageToConsole: 
+15:20:09.535 15:20:09.534 Message to master: anchor=/var/log/oceanstor: Created 15,180 of 66,000 files (23.00%)
+15:20:27.644 15:20:27.643 Message to master: anchor=/var/log/oceanstor: Created 16,500 of 66,000 files (25.00%)
+15:20:45.644 15:20:45.643 Message to master: anchor=/var/log/oceanstor: Created 17,820 of 66,000 files (27.00%)
+15:21:07.664 15:21:07.663 Message to master: anchor=/var/log/oceanstor: Created 19,800 of 66,000 files (30.00%)
+15:21:22.813 15:21:22.812 Message to master: anchor=/var/log/oceanstor: Created 21,120 of 66,000 files (32.00%)
+15:21:38.357 15:21:38.357 Message to master: anchor=/var/log/oceanstor: Created 22,440 of 66,000 files (34.00%)
+15:21:55.680 15:21:55.680 Message to master: anchor=/var/log/oceanstor: Created 23,760 of 66,000 files (36.00%)
+15:22:14.787 15:22:14.786 Message to master: anchor=/var/log/oceanstor: Created 25,080 of 66,000 files (38.00%)
+15:22:36.061 15:22:36.060 Message to master: anchor=/var/log/oceanstor: Created 26,400 of 66,000 files (40.00%)
+15:22:53.389 15:22:53.389 Message to master: anchor=/var/log/oceanstor: Created 27,720 of 66,000 files (42.00%)
+15:23:10.404 15:23:10.403 Message to master: anchor=/var/log/oceanstor: Created 29,040 of 66,000 files (44.00%)
+15:23:26.481 15:23:26.480 Message to master: anchor=/var/log/oceanstor: Created 30,360 of 66,000 files (46.00%)
+15:23:45.283 15:23:45.282 Message to master: anchor=/var/log/oceanstor: Created 31,680 of 66,000 files (48.00%)
+15:24:06.008 15:24:06.008 Message to master: anchor=/var/log/oceanstor: Created 33,000 of 66,000 files (50.00%)
+15:24:23.655 15:24:23.654 Message to master: anchor=/var/log/oceanstor: Created 34,320 of 66,000 files (52.00%)
+15:24:38.672 15:24:38.671 Message to master: anchor=/var/log/oceanstor: Created 35,640 of 66,000 files (54.00%)
+15:24:55.854 15:24:55.854 Message to master: anchor=/var/log/oceanstor: Created 36,960 of 66,000 files (56.00%)
+15:25:16.629 15:25:16.628 Message to master: anchor=/var/log/oceanstor: Created 38,280 of 66,000 files (58.00%)
+15:25:36.023 15:25:36.023 Message to master: anchor=/var/log/oceanstor: Created 39,600 of 66,000 files (60.00%)
+15:25:57.625 15:25:57.625 Message to master: anchor=/var/log/oceanstor: Created 40,920 of 66,000 files (62.00%)
+15:26:16.053 15:26:16.052 Message to master: anchor=/var/log/oceanstor: Created 42,240 of 66,000 files (64.00%)
+15:26:33.083 15:26:33.083 Message to master: anchor=/var/log/oceanstor: Created 43,560 of 66,000 files (66.00%)
+15:26:56.803 15:26:56.803 Message to master: anchor=/var/log/oceanstor: Created 45,540 of 66,000 files (69.00%)
+15:27:16.869 15:27:16.868 Message to master: anchor=/var/log/oceanstor: Created 46,860 of 66,000 files (71.00%)
+15:27:33.554 15:27:33.554 Message to master: anchor=/var/log/oceanstor: Created 48,180 of 66,000 files (73.00%)
+15:27:52.203 15:27:52.203 Message to master: anchor=/var/log/oceanstor: Created 49,500 of 66,000 files (75.00%)
+15:28:10.141 15:28:10.141 Message to master: anchor=/var/log/oceanstor: Created 50,820 of 66,000 files (77.00%)
+15:28:28.897 15:28:28.896 Message to master: anchor=/var/log/oceanstor: Created 52,140 of 66,000 files (79.00%)
+15:28:49.043 15:28:49.042 Message to master: anchor=/var/log/oceanstor: Created 53,460 of 66,000 files (81.00%)
+15:29:08.624 15:29:08.623 Message to master: anchor=/var/log/oceanstor: Created 54,780 of 66,000 files (83.00%)
+15:29:26.824 15:29:26.823 Message to master: anchor=/var/log/oceanstor: Created 56,100 of 66,000 files (85.00%)
+15:29:48.190 15:29:48.190 Message to master: anchor=/var/log/oceanstor: Created 58,080 of 66,000 files (88.00%)
+15:30:04.854 15:30:04.854 Message to master: anchor=/var/log/oceanstor: Created 59,400 of 66,000 files (90.00%)
+15:30:07.146 15:30:07.146 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:30:07.146 15:30:07.146 sendMessageToConsole: /var/log/messages: Mar  8 15:30:03 host-10-233-233-72 systemd: Created slice User Slice of root.
+15:30:07.146 15:30:07.146 sendMessageToConsole: /var/log/messages: Mar  8 15:30:03 host-10-233-233-72 systemd: Started Session 180 of user root.
+15:30:07.146 15:30:07.146 sendMessageToConsole: /var/log/messages: Mar  8 15:30:04 host-10-233-233-72 systemd: Removed slice User Slice of root.
+15:30:07.146 15:30:07.146 sendMessageToConsole: 
+15:30:21.527 15:30:21.526 Message to master: anchor=/var/log/oceanstor: Created 60,720 of 66,000 files (92.00%)
+15:30:38.923 15:30:38.922 Message to master: anchor=/var/log/oceanstor: Created 62,040 of 66,000 files (94.00%)
+15:30:54.009 15:30:54.008 Message to master: anchor=/var/log/oceanstor: Created 63,360 of 66,000 files (96.00%)
+15:31:12.636 15:31:12.635 Message to master: anchor=/var/log/oceanstor: Created 64,680 of 66,000 files (98.00%)
+15:31:30.815 15:31:30.815 Message to master: anchor=/var/log/oceanstor create complete.
+15:31:30.919 15:31:30.919 
+15:31:30.919 15:31:30.919 Miscellaneous statistics:
+15:31:30.919 15:31:30.919 FILE_CREATES        Files created:                               66,000
+15:31:30.919 15:31:30.919 DIRECTORY_CREATES   Directories created:                            176
+15:31:30.919 15:31:30.919 WRITE_OPENS         Files opened for write activity:             66,000
+15:31:30.919 15:31:30.919 DIR_EXISTS          Directory may not exist (yet):                    4
+15:31:30.919 15:31:30.919 FILE_CLOSES         Close requests:                              66,000
+15:31:30.919 15:31:30.919 
+15:31:30.919 15:31:30.919 Java Heap in MB. max:  910.500; current:  120.500; used:   24.596; free:   95.904
+15:31:30.919 15:31:30.919 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+15:34:25.028 15:34:25.028 End of run
+15:34:25.028 15:34:25.028 **********
+15:34:25.028 
+15:34:25.028 
+15:34:26.118 15:34:26.117 Master is requesting slave shutdown
+15:34:26.118 15:34:26.118 Java Heap in MB. max:  910.500; current:  122.000; used:   24.306; free:   97.694
