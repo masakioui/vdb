@@ -1,0 +1,965 @@
+<title>Vdbench sd_random_write_4K_7HOST_40hour/n8-0.stdout.html</title><pre>
+stdout/stderr for slave=n8-0
+
+18:25:51.375 18:25:52.177 SlaveJvm execution parameter:  '-m 10.233.233.72'
+18:25:51.375 18:25:52.178 SlaveJvm execution parameter:  '-n 10.233.233.211-16-190308-18.25.50.492'
+18:25:51.375 18:25:52.178 SlaveJvm execution parameter:  '-l n8-0'
+18:25:51.375 18:25:52.178 SlaveJvm execution parameter:  '-p 5570'
+18:25:51.375 18:25:52.178 SlaveJvm positional parameter: 'SlaveJvm'
+18:25:51.489 18:25:52.292 successfully connected to master 10.233.233.72
+18:25:51.489 18:25:52.292 Connection to 10.233.233.72 using port 5570 successful
+18:25:51.558 18:25:52.360 ticks_per_second: 100
+18:25:51.574 18:25:52.377 Configuration interpretation took 0.02 seconds
+
+Link to Run Definitions:         <A HREF="#_992136656">random_write For loops: None</A>
+
+18:25:51.796 18:25:52.599 Beginning of run setup
+18:25:51.796 18:25:52.599 **********************
+18:25:51.796 
+18:25:51.796 
+18:25:51.812 18:25:52.615 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:25:51.888 18:25:52.692 Opening sd=sd_var,lun=/dev/vda3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:25:51.901 18:25:52.704 Started 3 Workload Generator threads.
+18:25:51.948 18:25:52.752 Started  1 i/o threads for sd_var
+18:25:51.948 18:25:52.752 Started a total of  1 i/o threads.
+18:25:51.948 18:25:52.752 Waiting for task synchronization
+18:25:51.948 18:25:52.752 task_wait_start_complete: IO_task /dev/vda3 1
+18:25:52.149 18:25:52.952 Requesting full garbage collection
+18:25:52.149 18:25:52.953 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   159 free:    93 
+18:25:52.198 18:25:53.001 GcTracker: cum:   2 intv:  2 ms:      47 mss:  0.00% Heap_MB max:   911 curr:   252 used:    17 free:   235 
+18:25:52.198 18:25:53.001 task_wait_start_complete() end
+
+<a name="_992136656"></a><i><b>18:25:53.002 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=144000; For loops: None</b></i>
+
+18:25:53.004 18:25:53.807 task_run_all(): 5 tasks
+18:30:01.823 18:30:02.626 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:30:01.823 18:30:02.627 sendMessageToConsole: /var/log/messages: Mar  8 18:30:01 host-10-233-233-211 systemd: Started Session 227 of user root.
+18:30:01.823 18:30:02.627 sendMessageToConsole: 
+18:40:01.845 18:40:02.650 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:40:01.845 18:40:02.651 sendMessageToConsole: /var/log/messages: Mar  8 18:40:01 host-10-233-233-211 systemd: Started Session 228 of user root.
+18:40:01.845 18:40:02.651 sendMessageToConsole: 
+18:50:01.864 18:50:02.671 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:50:01.864 18:50:02.671 sendMessageToConsole: /var/log/messages: Mar  8 18:50:01 host-10-233-233-211 systemd: Started Session 229 of user root.
+18:50:01.864 18:50:02.671 sendMessageToConsole: 
+19:00:01.879 19:00:02.688 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:00:01.879 19:00:02.689 sendMessageToConsole: /var/log/messages: Mar  8 19:00:01 host-10-233-233-211 systemd: Started Session 230 of user root.
+19:00:01.879 19:00:02.689 sendMessageToConsole: 
+19:01:01.884 19:01:02.693 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:01:01.884 19:01:02.693 sendMessageToConsole: /var/log/messages: Mar  8 19:01:01 host-10-233-233-211 systemd: Started Session 231 of user root.
+19:01:01.884 19:01:02.693 sendMessageToConsole: 
+19:10:01.897 19:10:02.708 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:10:01.897 19:10:02.708 sendMessageToConsole: /var/log/messages: Mar  8 19:10:01 host-10-233-233-211 systemd: Started Session 232 of user root.
+19:10:01.897 19:10:02.708 sendMessageToConsole: 
+19:20:01.916 19:20:02.727 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:20:01.916 19:20:02.728 sendMessageToConsole: /var/log/messages: Mar  8 19:20:01 host-10-233-233-211 systemd: Started Session 233 of user root.
+19:20:01.916 19:20:02.728 sendMessageToConsole: 
+19:30:01.931 19:30:02.747 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:30:01.931 19:30:02.747 sendMessageToConsole: /var/log/messages: Mar  8 19:30:01 host-10-233-233-211 systemd: Started Session 234 of user root.
+19:30:01.931 19:30:02.747 sendMessageToConsole: 
+19:40:01.948 19:40:02.765 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:40:01.948 19:40:02.766 sendMessageToConsole: /var/log/messages: Mar  8 19:40:01 host-10-233-233-211 systemd: Started Session 235 of user root.
+19:40:01.948 19:40:02.766 sendMessageToConsole: 
+19:50:01.966 19:50:02.784 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:50:01.966 19:50:02.784 sendMessageToConsole: /var/log/messages: Mar  8 19:50:01 host-10-233-233-211 systemd: Started Session 236 of user root.
+19:50:01.966 19:50:02.784 sendMessageToConsole: 
+20:00:01.982 20:00:02.803 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:00:01.982 20:00:02.803 sendMessageToConsole: /var/log/messages: Mar  8 20:00:01 host-10-233-233-211 systemd: Started Session 237 of user root.
+20:00:01.982 20:00:02.803 sendMessageToConsole: 
+20:01:01.988 20:01:02.807 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:01:01.988 20:01:02.809 sendMessageToConsole: /var/log/messages: Mar  8 20:01:01 host-10-233-233-211 systemd: Started Session 238 of user root.
+20:01:01.988 20:01:02.809 sendMessageToConsole: 
+20:10:02.001 20:10:02.824 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:10:02.001 20:10:02.824 sendMessageToConsole: /var/log/messages: Mar  8 20:10:01 host-10-233-233-211 systemd: Started Session 239 of user root.
+20:10:02.001 20:10:02.824 sendMessageToConsole: 
+20:20:02.019 20:20:02.843 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:20:02.019 20:20:02.843 sendMessageToConsole: /var/log/messages: Mar  8 20:20:01 host-10-233-233-211 systemd: Started Session 240 of user root.
+20:20:02.019 20:20:02.843 sendMessageToConsole: 
+20:30:02.038 20:30:02.861 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:30:02.038 20:30:02.862 sendMessageToConsole: /var/log/messages: Mar  8 20:30:01 host-10-233-233-211 systemd: Started Session 241 of user root.
+20:30:02.038 20:30:02.862 sendMessageToConsole: 
+20:40:02.052 20:40:02.879 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:40:02.052 20:40:02.879 sendMessageToConsole: /var/log/messages: Mar  8 20:40:01 host-10-233-233-211 systemd: Started Session 242 of user root.
+20:40:02.052 20:40:02.879 sendMessageToConsole: 
+20:50:02.071 20:50:02.899 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:50:02.071 20:50:02.900 sendMessageToConsole: /var/log/messages: Mar  8 20:50:01 host-10-233-233-211 systemd: Started Session 243 of user root.
+20:50:02.071 20:50:02.900 sendMessageToConsole: 
+21:00:02.087 21:00:02.918 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:00:02.087 21:00:02.918 sendMessageToConsole: /var/log/messages: Mar  8 21:00:01 host-10-233-233-211 systemd: Started Session 244 of user root.
+21:00:02.087 21:00:02.918 sendMessageToConsole: 
+21:01:02.092 21:01:02.924 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:01:02.092 21:01:02.924 sendMessageToConsole: /var/log/messages: Mar  8 21:01:01 host-10-233-233-211 systemd: Started Session 245 of user root.
+21:01:02.092 21:01:02.924 sendMessageToConsole: 
+21:10:02.109 21:10:02.941 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:10:02.109 21:10:02.942 sendMessageToConsole: /var/log/messages: Mar  8 21:10:01 host-10-233-233-211 systemd: Started Session 246 of user root.
+21:10:02.109 21:10:02.942 sendMessageToConsole: 
+21:20:02.126 21:20:02.959 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:20:02.126 21:20:02.960 sendMessageToConsole: /var/log/messages: Mar  8 21:20:01 host-10-233-233-211 systemd: Started Session 247 of user root.
+21:20:02.126 21:20:02.960 sendMessageToConsole: 
+21:30:02.142 21:30:02.978 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:30:02.142 21:30:02.978 sendMessageToConsole: /var/log/messages: Mar  8 21:30:01 host-10-233-233-211 systemd: Started Session 248 of user root.
+21:30:02.142 21:30:02.978 sendMessageToConsole: 
+21:40:02.180 21:40:03.015 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:40:02.180 21:40:03.018 sendMessageToConsole: /var/log/messages: Mar  8 21:40:01 host-10-233-233-211 systemd: Started Session 249 of user root.
+21:40:02.180 21:40:03.018 sendMessageToConsole: 
+21:50:02.193 21:50:03.033 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:50:02.193 21:50:03.033 sendMessageToConsole: /var/log/messages: Mar  8 21:50:01 host-10-233-233-211 systemd: Started Session 250 of user root.
+21:50:02.193 21:50:03.033 sendMessageToConsole: 
+22:00:02.207 22:00:03.049 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:00:02.207 22:00:03.050 sendMessageToConsole: /var/log/messages: Mar  8 22:00:01 host-10-233-233-211 systemd: Started Session 251 of user root.
+22:00:02.207 22:00:03.050 sendMessageToConsole: 
+22:01:02.212 22:01:03.054 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:01:02.212 22:01:03.055 sendMessageToConsole: /var/log/messages: Mar  8 22:01:01 host-10-233-233-211 systemd: Started Session 252 of user root.
+22:01:02.212 22:01:03.055 sendMessageToConsole: 
+22:10:02.227 22:10:03.070 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:10:02.227 22:10:03.070 sendMessageToConsole: /var/log/messages: Mar  8 22:10:01 host-10-233-233-211 systemd: Started Session 253 of user root.
+22:10:02.227 22:10:03.070 sendMessageToConsole: 
+22:20:02.244 22:20:03.089 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:20:02.244 22:20:03.090 sendMessageToConsole: /var/log/messages: Mar  8 22:20:01 host-10-233-233-211 systemd: Started Session 254 of user root.
+22:20:02.244 22:20:03.090 sendMessageToConsole: 
+22:30:02.262 22:30:03.106 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:30:02.262 22:30:03.108 sendMessageToConsole: /var/log/messages: Mar  8 22:30:01 host-10-233-233-211 systemd: Started Session 255 of user root.
+22:30:02.262 22:30:03.108 sendMessageToConsole: 
+22:40:02.275 22:40:03.125 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:40:02.275 22:40:03.125 sendMessageToConsole: /var/log/messages: Mar  8 22:40:01 host-10-233-233-211 systemd: Started Session 256 of user root.
+22:40:02.275 22:40:03.125 sendMessageToConsole: 
+22:50:02.289 22:50:03.141 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:50:02.289 22:50:03.141 sendMessageToConsole: /var/log/messages: Mar  8 22:50:01 host-10-233-233-211 systemd: Started Session 257 of user root.
+22:50:02.289 22:50:03.141 sendMessageToConsole: 
+23:00:02.302 23:00:03.156 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:00:02.302 23:00:03.156 sendMessageToConsole: /var/log/messages: Mar  8 23:00:01 host-10-233-233-211 systemd: Started Session 258 of user root.
+23:00:02.302 23:00:03.156 sendMessageToConsole: 
+23:01:02.307 23:01:03.161 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:01:02.307 23:01:03.161 sendMessageToConsole: /var/log/messages: Mar  8 23:01:01 host-10-233-233-211 systemd: Started Session 259 of user root.
+23:01:02.307 23:01:03.161 sendMessageToConsole: 
+23:10:02.318 23:10:03.173 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:10:02.318 23:10:03.174 sendMessageToConsole: /var/log/messages: Mar  8 23:10:01 host-10-233-233-211 systemd: Started Session 260 of user root.
+23:10:02.318 23:10:03.174 sendMessageToConsole: 
+23:20:02.333 23:20:03.190 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:20:02.333 23:20:03.190 sendMessageToConsole: /var/log/messages: Mar  8 23:20:01 host-10-233-233-211 systemd: Started Session 261 of user root.
+23:20:02.333 23:20:03.190 sendMessageToConsole: 
+23:30:02.348 23:30:03.207 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:30:02.348 23:30:03.207 sendMessageToConsole: /var/log/messages: Mar  8 23:30:01 host-10-233-233-211 systemd: Started Session 262 of user root.
+23:30:02.348 23:30:03.207 sendMessageToConsole: 
+23:40:02.362 23:40:03.223 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:40:02.362 23:40:03.224 sendMessageToConsole: /var/log/messages: Mar  8 23:40:01 host-10-233-233-211 systemd: Started Session 263 of user root.
+23:40:02.362 23:40:03.224 sendMessageToConsole: 
+23:50:02.377 23:50:03.240 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:50:02.377 23:50:03.240 sendMessageToConsole: /var/log/messages: Mar  8 23:50:01 host-10-233-233-211 systemd: Started Session 264 of user root.
+23:50:02.377 23:50:03.240 sendMessageToConsole: 
+23:53:02.384 23:53:03.247 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:53:02.384 23:53:03.248 sendMessageToConsole: /var/log/messages: Mar  8 23:53:01 host-10-233-233-211 systemd: Started Session 265 of user root.
+23:53:02.384 23:53:03.248 sendMessageToConsole: 
+00:00:02.414 00:00:03.280 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:00:02.414 00:00:03.280 sendMessageToConsole: /var/log/messages: Mar  9 00:00:01 host-10-233-233-211 systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+00:00:02.414 00:00:03.280 sendMessageToConsole: /var/log/messages: Mar  9 00:00:01 host-10-233-233-211 systemd: Started Session 266 of user root.
+00:00:02.414 00:00:03.280 sendMessageToConsole: 
+00:00:57.419 00:00:58.285 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:00:57.419 00:00:58.285 sendMessageToConsole: /var/log/messages: Mar  9 00:00:56 host-10-233-233-211 systemd: Started update of the root trust anchor for DNSSEC validation in unbound.
+00:00:57.419 00:00:58.285 sendMessageToConsole: 
+00:01:02.423 00:01:03.288 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:01:02.423 00:01:03.290 sendMessageToConsole: /var/log/messages: Mar  9 00:01:01 host-10-233-233-211 systemd: Started Session 267 of user root.
+00:01:02.423 00:01:03.290 sendMessageToConsole: 
+00:10:02.436 00:10:03.304 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:10:02.436 00:10:03.304 sendMessageToConsole: /var/log/messages: Mar  9 00:10:01 host-10-233-233-211 systemd: Started Session 268 of user root.
+00:10:02.436 00:10:03.304 sendMessageToConsole: 
+00:20:02.453 00:20:03.322 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:20:02.453 00:20:03.323 sendMessageToConsole: /var/log/messages: Mar  9 00:20:01 host-10-233-233-211 systemd: Started Session 269 of user root.
+00:20:02.453 00:20:03.323 sendMessageToConsole: 
+00:30:02.467 00:30:03.339 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:30:02.467 00:30:03.339 sendMessageToConsole: /var/log/messages: Mar  9 00:30:01 host-10-233-233-211 systemd: Started Session 270 of user root.
+00:30:02.467 00:30:03.339 sendMessageToConsole: 
+00:40:02.481 00:40:03.354 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:40:02.481 00:40:03.355 sendMessageToConsole: /var/log/messages: Mar  9 00:40:01 host-10-233-233-211 systemd: Started Session 271 of user root.
+00:40:02.481 00:40:03.355 sendMessageToConsole: 
+00:50:02.495 00:50:03.370 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:50:02.495 00:50:03.371 sendMessageToConsole: /var/log/messages: Mar  9 00:50:01 host-10-233-233-211 systemd: Started Session 272 of user root.
+00:50:02.495 00:50:03.371 sendMessageToConsole: 
+01:00:02.509 01:00:03.387 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:00:02.509 01:00:03.387 sendMessageToConsole: /var/log/messages: Mar  9 01:00:01 host-10-233-233-211 systemd: Started Session 273 of user root.
+01:00:02.509 01:00:03.387 sendMessageToConsole: 
+01:01:02.514 01:01:03.392 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:01:02.514 01:01:03.392 sendMessageToConsole: /var/log/messages: Mar  9 01:01:01 host-10-233-233-211 systemd: Started Session 274 of user root.
+01:01:02.514 01:01:03.392 sendMessageToConsole: 
+01:10:02.525 01:10:03.404 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:10:02.525 01:10:03.405 sendMessageToConsole: /var/log/messages: Mar  9 01:10:01 host-10-233-233-211 systemd: Started Session 275 of user root.
+01:10:02.525 01:10:03.405 sendMessageToConsole: 
+01:20:02.539 01:20:03.420 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:20:02.539 01:20:03.420 sendMessageToConsole: /var/log/messages: Mar  9 01:20:01 host-10-233-233-211 systemd: Started Session 276 of user root.
+01:20:02.539 01:20:03.420 sendMessageToConsole: 
+01:30:02.554 01:30:03.437 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:30:02.554 01:30:03.437 sendMessageToConsole: /var/log/messages: Mar  9 01:30:01 host-10-233-233-211 systemd: Started Session 277 of user root.
+01:30:02.554 01:30:03.437 sendMessageToConsole: 
+01:40:02.569 01:40:03.453 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:40:02.569 01:40:03.454 sendMessageToConsole: /var/log/messages: Mar  9 01:40:02 host-10-233-233-211 systemd: Started Session 278 of user root.
+01:40:02.569 01:40:03.454 sendMessageToConsole: 
+01:50:02.584 01:50:03.470 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:50:02.584 01:50:03.470 sendMessageToConsole: /var/log/messages: Mar  9 01:50:01 host-10-233-233-211 systemd: Started Session 279 of user root.
+01:50:02.584 01:50:03.470 sendMessageToConsole: 
+02:00:02.599 02:00:03.487 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:00:02.599 02:00:03.488 sendMessageToConsole: /var/log/messages: Mar  9 02:00:01 host-10-233-233-211 systemd: Started Session 280 of user root.
+02:00:02.599 02:00:03.488 sendMessageToConsole: 
+02:01:02.602 02:01:03.491 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:01:02.602 02:01:03.492 sendMessageToConsole: /var/log/messages: Mar  9 02:01:01 host-10-233-233-211 systemd: Started Session 281 of user root.
+02:01:02.602 02:01:03.492 sendMessageToConsole: 
+02:10:02.616 02:10:03.506 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:10:02.616 02:10:03.507 sendMessageToConsole: /var/log/messages: Mar  9 02:10:01 host-10-233-233-211 systemd: Started Session 282 of user root.
+02:10:02.616 02:10:03.507 sendMessageToConsole: 
+02:20:02.631 02:20:03.523 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:20:02.631 02:20:03.524 sendMessageToConsole: /var/log/messages: Mar  9 02:20:01 host-10-233-233-211 systemd: Started Session 283 of user root.
+02:20:02.631 02:20:03.524 sendMessageToConsole: 
+02:30:02.646 02:30:03.541 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:30:02.646 02:30:03.542 sendMessageToConsole: /var/log/messages: Mar  9 02:30:01 host-10-233-233-211 systemd: Started Session 284 of user root.
+02:30:02.646 02:30:03.542 sendMessageToConsole: 
+02:40:02.662 02:40:03.557 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:40:02.662 02:40:03.558 sendMessageToConsole: /var/log/messages: Mar  9 02:40:01 host-10-233-233-211 systemd: Started Session 285 of user root.
+02:40:02.662 02:40:03.559 sendMessageToConsole: 
+02:50:02.678 02:50:03.575 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:50:02.678 02:50:03.575 sendMessageToConsole: /var/log/messages: Mar  9 02:50:01 host-10-233-233-211 systemd: Started Session 286 of user root.
+02:50:02.678 02:50:03.575 sendMessageToConsole: 
+03:00:02.693 03:00:03.593 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:00:02.693 03:00:03.593 sendMessageToConsole: /var/log/messages: Mar  9 03:00:01 host-10-233-233-211 systemd: Started Session 287 of user root.
+03:00:02.693 03:00:03.593 sendMessageToConsole: 
+03:01:02.727 03:01:03.627 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:01:02.727 03:01:03.628 sendMessageToConsole: /var/log/messages: Mar  9 03:01:01 host-10-233-233-211 systemd: Started Session 288 of user root.
+03:01:02.727 03:01:03.628 sendMessageToConsole: 
+03:10:02.740 03:10:03.642 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:10:02.740 03:10:03.642 sendMessageToConsole: /var/log/messages: Mar  9 03:10:01 host-10-233-233-211 systemd: Started Session 289 of user root.
+03:10:02.740 03:10:03.642 sendMessageToConsole: 
+03:20:02.754 03:20:03.659 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:20:02.754 03:20:03.659 sendMessageToConsole: /var/log/messages: Mar  9 03:20:01 host-10-233-233-211 systemd: Started Session 290 of user root.
+03:20:02.754 03:20:03.659 sendMessageToConsole: 
+03:30:02.770 03:30:03.675 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:30:02.770 03:30:03.676 sendMessageToConsole: /var/log/messages: Mar  9 03:30:01 host-10-233-233-211 systemd: Started Session 291 of user root.
+03:30:02.770 03:30:03.676 sendMessageToConsole: 
+03:32:07.776 03:32:08.683 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:32:07.776 03:32:08.683 sendMessageToConsole: /var/log/messages: Mar  9 03:32:06 host-10-233-233-211 logrotate: ALERT exited abnormally with [1]
+03:32:07.776 03:32:08.683 sendMessageToConsole: 
+03:36:52.784 03:36:53.691 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:36:52.784 03:36:53.692 sendMessageToConsole: /var/log/messages: Mar  9 03:36:52 host-10-233-233-211 kernel: traps: mandb[29242] general protection ip:7f075fcb7d69 sp:7fff6fee0198 error:0 in libc-2.17.so[7f075fb64000+1c2000]
+03:36:52.784 03:36:53.692 sendMessageToConsole: /var/log/messages: Mar  9 03:36:52 host-10-233-233-211 abrt-hook-ccpp: Process 29242 (mandb) of user 0 killed by SIGSEGV - dumping core
+03:36:52.784 03:36:53.692 sendMessageToConsole: 
+03:37:12.787 03:37:13.694 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0058 page 1724128148: illegal page type or format
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0061 PANIC: Invalid argument
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbcursor->c_get: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: error(-30973) getting "mandb" records from Basenames index: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbcursor->c_close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:37:12.787 03:37:13.694 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB1581 File handles still open at environment close
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Packages
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Name
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Basenames
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbenv->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:11 host-10-233-233-211 abrt-server: Executable '/usr/bin/mandb' doesn't belong to any package and ProcessUnpackaged is set to 'no'
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:12 host-10-233-233-211 abrt-server: 'post-create' on '/var/spool/abrt/ccpp-2019-03-09-03:36:52-29242' exited with 1
+03:37:12.787 03:37:13.695 sendMessageToConsole: /var/log/messages: Mar  9 03:37:12 host-10-233-233-211 abrt-server: Deleting problem directory '/var/spool/abrt/ccpp-2019-03-09-03:36:52-29242'
+03:37:12.787 03:37:13.695 sendMessageToConsole: 
+03:38:32.793 03:38:33.700 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:38:32.793 03:38:33.701 sendMessageToConsole: /var/log/messages: Mar  9 03:38:31 host-10-233-233-211 rhsmd: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
+03:38:32.793 03:38:33.701 sendMessageToConsole: 
+03:40:02.799 03:40:03.706 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:40:02.799 03:40:03.707 sendMessageToConsole: /var/log/messages: Mar  9 03:40:01 host-10-233-233-211 systemd: Started Session 292 of user root.
+03:40:02.799 03:40:03.707 sendMessageToConsole: 
+03:50:02.813 03:50:03.723 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:50:02.813 03:50:03.723 sendMessageToConsole: /var/log/messages: Mar  9 03:50:01 host-10-233-233-211 systemd: Started Session 293 of user root.
+03:50:02.813 03:50:03.723 sendMessageToConsole: 
+04:00:02.826 04:00:03.737 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:00:02.826 04:00:03.738 sendMessageToConsole: /var/log/messages: Mar  9 04:00:01 host-10-233-233-211 systemd: Started Session 294 of user root.
+04:00:02.826 04:00:03.738 sendMessageToConsole: 
+04:01:02.830 04:01:03.742 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:01:02.830 04:01:03.742 sendMessageToConsole: /var/log/messages: Mar  9 04:01:01 host-10-233-233-211 systemd: Started Session 295 of user root.
+04:01:02.830 04:01:03.742 sendMessageToConsole: 
+04:10:02.843 04:10:03.756 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:10:02.843 04:10:03.757 sendMessageToConsole: /var/log/messages: Mar  9 04:10:01 host-10-233-233-211 systemd: Started Session 296 of user root.
+04:10:02.843 04:10:03.757 sendMessageToConsole: 
+04:20:02.854 04:20:03.770 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:20:02.854 04:20:03.770 sendMessageToConsole: /var/log/messages: Mar  9 04:20:01 host-10-233-233-211 systemd: Started Session 297 of user root.
+04:20:02.854 04:20:03.770 sendMessageToConsole: 
+04:30:02.868 04:30:03.786 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:30:02.868 04:30:03.786 sendMessageToConsole: /var/log/messages: Mar  9 04:30:01 host-10-233-233-211 systemd: Started Session 298 of user root.
+04:30:02.868 04:30:03.786 sendMessageToConsole: 
+04:40:02.882 04:40:03.801 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:40:02.882 04:40:03.802 sendMessageToConsole: /var/log/messages: Mar  9 04:40:02 host-10-233-233-211 systemd: Started Session 299 of user root.
+04:40:02.882 04:40:03.802 sendMessageToConsole: 
+04:50:02.896 04:50:03.818 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:50:02.896 04:50:03.818 sendMessageToConsole: /var/log/messages: Mar  9 04:50:01 host-10-233-233-211 systemd: Started Session 300 of user root.
+04:50:02.896 04:50:03.818 sendMessageToConsole: 
+05:00:02.913 05:00:03.837 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:00:02.913 05:00:03.837 sendMessageToConsole: /var/log/messages: Mar  9 05:00:01 host-10-233-233-211 systemd: Started Session 301 of user root.
+05:00:02.913 05:00:03.837 sendMessageToConsole: 
+05:01:02.919 05:01:03.842 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:01:02.919 05:01:03.843 sendMessageToConsole: /var/log/messages: Mar  9 05:01:01 host-10-233-233-211 systemd: Started Session 302 of user root.
+05:01:02.919 05:01:03.843 sendMessageToConsole: 
+05:10:02.936 05:10:03.862 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:10:02.936 05:10:03.862 sendMessageToConsole: /var/log/messages: Mar  9 05:10:01 host-10-233-233-211 systemd: Started Session 303 of user root.
+05:10:02.936 05:10:03.862 sendMessageToConsole: 
+05:20:02.959 05:20:03.885 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:20:02.959 05:20:03.887 sendMessageToConsole: /var/log/messages: Mar  9 05:20:01 host-10-233-233-211 systemd: Started Session 304 of user root.
+05:20:02.959 05:20:03.887 sendMessageToConsole: 
+05:30:02.979 05:30:03.907 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:30:02.979 05:30:03.907 sendMessageToConsole: /var/log/messages: Mar  9 05:30:01 host-10-233-233-211 systemd: Started Session 305 of user root.
+05:30:02.979 05:30:03.907 sendMessageToConsole: 
+05:40:02.995 05:40:03.927 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:40:02.995 05:40:03.927 sendMessageToConsole: /var/log/messages: Mar  9 05:40:01 host-10-233-233-211 systemd: Started Session 306 of user root.
+05:40:02.995 05:40:03.927 sendMessageToConsole: 
+05:50:03.013 05:50:03.945 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:50:03.013 05:50:03.946 sendMessageToConsole: /var/log/messages: Mar  9 05:50:01 host-10-233-233-211 systemd: Started Session 307 of user root.
+05:50:03.013 05:50:03.946 sendMessageToConsole: 
+06:00:03.028 06:00:03.962 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:00:03.028 06:00:03.962 sendMessageToConsole: /var/log/messages: Mar  9 06:00:01 host-10-233-233-211 systemd: Started Session 308 of user root.
+06:00:03.028 06:00:03.962 sendMessageToConsole: 
+06:01:03.031 06:01:03.966 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:01:03.031 06:01:03.966 sendMessageToConsole: /var/log/messages: Mar  9 06:01:01 host-10-233-233-211 systemd: Started Session 309 of user root.
+06:01:03.031 06:01:03.966 sendMessageToConsole: 
+06:10:03.046 06:10:03.982 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:10:03.046 06:10:03.983 sendMessageToConsole: /var/log/messages: Mar  9 06:10:01 host-10-233-233-211 systemd: Started Session 310 of user root.
+06:10:03.046 06:10:03.983 sendMessageToConsole: 
+06:20:03.062 06:20:04.001 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:20:03.062 06:20:04.001 sendMessageToConsole: /var/log/messages: Mar  9 06:20:01 host-10-233-233-211 systemd: Started Session 311 of user root.
+06:20:03.062 06:20:04.001 sendMessageToConsole: 
+06:30:03.078 06:30:04.020 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:30:03.078 06:30:04.020 sendMessageToConsole: /var/log/messages: Mar  9 06:30:01 host-10-233-233-211 systemd: Started Session 312 of user root.
+06:30:03.078 06:30:04.020 sendMessageToConsole: 
+06:40:03.098 06:40:04.037 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:40:03.098 06:40:04.038 sendMessageToConsole: /var/log/messages: Mar  9 06:40:01 host-10-233-233-211 systemd: Started Session 313 of user root.
+06:40:03.098 06:40:04.038 sendMessageToConsole: 
+06:50:03.138 06:50:04.083 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:50:03.138 06:50:04.083 sendMessageToConsole: /var/log/messages: Mar  9 06:50:01 host-10-233-233-211 systemd: Started Session 314 of user root.
+06:50:03.138 06:50:04.083 sendMessageToConsole: 
+07:00:03.158 07:00:04.104 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:00:03.158 07:00:04.104 sendMessageToConsole: /var/log/messages: Mar  9 07:00:01 host-10-233-233-211 systemd: Started Session 315 of user root.
+07:00:03.158 07:00:04.105 sendMessageToConsole: 
+07:01:03.161 07:01:04.108 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:01:03.161 07:01:04.108 sendMessageToConsole: /var/log/messages: Mar  9 07:01:01 host-10-233-233-211 systemd: Started Session 316 of user root.
+07:01:03.161 07:01:04.108 sendMessageToConsole: 
+07:10:03.172 07:10:04.121 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:10:03.172 07:10:04.121 sendMessageToConsole: /var/log/messages: Mar  9 07:10:01 host-10-233-233-211 systemd: Started Session 317 of user root.
+07:10:03.172 07:10:04.121 sendMessageToConsole: 
+07:20:03.186 07:20:04.135 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:20:03.186 07:20:04.136 sendMessageToConsole: /var/log/messages: Mar  9 07:20:01 host-10-233-233-211 systemd: Started Session 318 of user root.
+07:20:03.186 07:20:04.136 sendMessageToConsole: 
+07:30:03.198 07:30:04.151 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:30:03.199 07:30:04.151 sendMessageToConsole: /var/log/messages: Mar  9 07:30:01 host-10-233-233-211 systemd: Started Session 319 of user root.
+07:30:03.199 07:30:04.151 sendMessageToConsole: 
+07:40:03.210 07:40:04.164 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:40:03.210 07:40:04.164 sendMessageToConsole: /var/log/messages: Mar  9 07:40:01 host-10-233-233-211 systemd: Started Session 320 of user root.
+07:40:03.210 07:40:04.164 sendMessageToConsole: 
+07:50:03.224 07:50:04.178 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:50:03.224 07:50:04.179 sendMessageToConsole: /var/log/messages: Mar  9 07:50:01 host-10-233-233-211 systemd: Started Session 321 of user root.
+07:50:03.224 07:50:04.179 sendMessageToConsole: 
+08:00:03.234 08:00:04.192 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:00:03.234 08:00:04.192 sendMessageToConsole: /var/log/messages: Mar  9 08:00:02 host-10-233-233-211 systemd: Started Session 322 of user root.
+08:00:03.234 08:00:04.192 sendMessageToConsole: 
+08:01:03.238 08:01:04.196 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:01:03.239 08:01:04.197 sendMessageToConsole: /var/log/messages: Mar  9 08:01:01 host-10-233-233-211 systemd: Started Session 323 of user root.
+08:01:03.239 08:01:04.197 sendMessageToConsole: 
+08:10:03.255 08:10:04.213 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:10:03.255 08:10:04.214 sendMessageToConsole: /var/log/messages: Mar  9 08:10:01 host-10-233-233-211 systemd: Started Session 324 of user root.
+08:10:03.255 08:10:04.214 sendMessageToConsole: 
+08:20:03.271 08:20:04.232 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:20:03.271 08:20:04.233 sendMessageToConsole: /var/log/messages: Mar  9 08:20:01 host-10-233-233-211 systemd: Started Session 325 of user root.
+08:20:03.271 08:20:04.233 sendMessageToConsole: 
+08:30:03.291 08:30:04.251 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:30:03.291 08:30:04.251 sendMessageToConsole: /var/log/messages: Mar  9 08:30:01 host-10-233-233-211 systemd: Started Session 326 of user root.
+08:30:03.291 08:30:04.251 sendMessageToConsole: 
+08:40:03.303 08:40:04.269 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:40:03.303 08:40:04.269 sendMessageToConsole: /var/log/messages: Mar  9 08:40:01 host-10-233-233-211 systemd: Started Session 327 of user root.
+08:40:03.303 08:40:04.269 sendMessageToConsole: 
+08:50:03.323 08:50:04.287 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:50:03.323 08:50:04.288 sendMessageToConsole: /var/log/messages: Mar  9 08:50:01 host-10-233-233-211 systemd: Started Session 328 of user root.
+08:50:03.323 08:50:04.288 sendMessageToConsole: 
+09:00:03.338 09:00:04.305 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:00:03.338 09:00:04.305 sendMessageToConsole: /var/log/messages: Mar  9 09:00:01 host-10-233-233-211 systemd: Started Session 329 of user root.
+09:00:03.338 09:00:04.305 sendMessageToConsole: 
+09:01:03.341 09:01:04.311 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:01:03.341 09:01:04.311 sendMessageToConsole: /var/log/messages: Mar  9 09:01:01 host-10-233-233-211 systemd: Started Session 330 of user root.
+09:01:03.341 09:01:04.311 sendMessageToConsole: 
+09:10:03.358 09:10:04.328 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:10:03.358 09:10:04.329 sendMessageToConsole: /var/log/messages: Mar  9 09:10:01 host-10-233-233-211 systemd: Started Session 331 of user root.
+09:10:03.358 09:10:04.329 sendMessageToConsole: 
+09:20:03.374 09:20:04.346 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:20:03.374 09:20:04.346 sendMessageToConsole: /var/log/messages: Mar  9 09:20:01 host-10-233-233-211 systemd: Started Session 332 of user root.
+09:20:03.374 09:20:04.346 sendMessageToConsole: 
+09:30:03.390 09:30:04.364 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:30:03.390 09:30:04.365 sendMessageToConsole: /var/log/messages: Mar  9 09:30:01 host-10-233-233-211 systemd: Started Session 333 of user root.
+09:30:03.390 09:30:04.365 sendMessageToConsole: 
+09:40:03.403 09:40:04.379 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:40:03.404 09:40:04.380 sendMessageToConsole: /var/log/messages: Mar  9 09:40:01 host-10-233-233-211 systemd: Started Session 334 of user root.
+09:40:03.404 09:40:04.380 sendMessageToConsole: 
+09:50:03.420 09:50:04.399 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:50:03.420 09:50:04.399 sendMessageToConsole: /var/log/messages: Mar  9 09:50:01 host-10-233-233-211 systemd: Started Session 335 of user root.
+09:50:03.420 09:50:04.399 sendMessageToConsole: 
+10:00:03.439 10:00:04.420 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:00:03.439 10:00:04.420 sendMessageToConsole: /var/log/messages: Mar  9 10:00:01 host-10-233-233-211 systemd: Started Session 336 of user root.
+10:00:03.439 10:00:04.420 sendMessageToConsole: 
+10:01:03.444 10:01:04.425 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:01:03.445 10:01:04.426 sendMessageToConsole: /var/log/messages: Mar  9 10:01:01 host-10-233-233-211 systemd: Started Session 337 of user root.
+10:01:03.445 10:01:04.426 sendMessageToConsole: 
+10:10:03.458 10:10:04.441 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:10:03.458 10:10:04.441 sendMessageToConsole: /var/log/messages: Mar  9 10:10:01 host-10-233-233-211 systemd: Started Session 338 of user root.
+10:10:03.458 10:10:04.441 sendMessageToConsole: 
+10:20:03.472 10:20:04.456 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:20:03.472 10:20:04.457 sendMessageToConsole: /var/log/messages: Mar  9 10:20:01 host-10-233-233-211 systemd: Started Session 339 of user root.
+10:20:03.472 10:20:04.457 sendMessageToConsole: 
+10:30:03.489 10:30:04.475 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:30:03.489 10:30:04.475 sendMessageToConsole: /var/log/messages: Mar  9 10:30:01 host-10-233-233-211 systemd: Started Session 340 of user root.
+10:30:03.489 10:30:04.475 sendMessageToConsole: 
+10:40:03.506 10:40:04.495 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:40:03.506 10:40:04.495 sendMessageToConsole: /var/log/messages: Mar  9 10:40:01 host-10-233-233-211 systemd: Started Session 341 of user root.
+10:40:03.506 10:40:04.495 sendMessageToConsole: 
+10:50:03.525 10:50:04.516 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:50:03.526 10:50:04.517 sendMessageToConsole: /var/log/messages: Mar  9 10:50:01 host-10-233-233-211 systemd: Started Session 342 of user root.
+10:50:03.526 10:50:04.517 sendMessageToConsole: 
+11:00:03.545 11:00:04.537 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:00:03.545 11:00:04.537 sendMessageToConsole: /var/log/messages: Mar  9 11:00:01 host-10-233-233-211 systemd: Started Session 343 of user root.
+11:00:03.545 11:00:04.537 sendMessageToConsole: 
+11:01:03.550 11:01:04.542 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:01:03.550 11:01:04.542 sendMessageToConsole: /var/log/messages: Mar  9 11:01:01 host-10-233-233-211 systemd: Started Session 344 of user root.
+11:01:03.550 11:01:04.542 sendMessageToConsole: 
+11:10:03.564 11:10:04.558 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:10:03.564 11:10:04.559 sendMessageToConsole: /var/log/messages: Mar  9 11:10:02 host-10-233-233-211 systemd: Started Session 345 of user root.
+11:10:03.564 11:10:04.559 sendMessageToConsole: 
+11:20:03.582 11:20:04.578 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:20:03.582 11:20:04.578 sendMessageToConsole: /var/log/messages: Mar  9 11:20:01 host-10-233-233-211 systemd: Started Session 346 of user root.
+11:20:03.582 11:20:04.578 sendMessageToConsole: 
+11:30:03.596 11:30:04.595 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:30:03.597 11:30:04.595 sendMessageToConsole: /var/log/messages: Mar  9 11:30:01 host-10-233-233-211 systemd: Started Session 347 of user root.
+11:30:03.597 11:30:04.595 sendMessageToConsole: 
+11:40:03.613 11:40:04.613 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:40:03.613 11:40:04.614 sendMessageToConsole: /var/log/messages: Mar  9 11:40:01 host-10-233-233-211 systemd: Started Session 348 of user root.
+11:40:03.613 11:40:04.614 sendMessageToConsole: 
+11:50:03.631 11:50:04.633 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:50:03.631 11:50:04.634 sendMessageToConsole: /var/log/messages: Mar  9 11:50:01 host-10-233-233-211 systemd: Started Session 349 of user root.
+11:50:03.631 11:50:04.634 sendMessageToConsole: 
+12:00:03.649 12:00:04.653 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:00:03.649 12:00:04.653 sendMessageToConsole: /var/log/messages: Mar  9 12:00:01 host-10-233-233-211 systemd: Started Session 350 of user root.
+12:00:03.649 12:00:04.653 sendMessageToConsole: 
+12:01:03.652 12:01:04.657 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:01:03.652 12:01:04.657 sendMessageToConsole: /var/log/messages: Mar  9 12:01:01 host-10-233-233-211 systemd: Started Session 351 of user root.
+12:01:03.652 12:01:04.657 sendMessageToConsole: 
+12:10:03.686 12:10:04.689 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:10:03.686 12:10:04.689 sendMessageToConsole: /var/log/messages: Mar  9 12:10:01 host-10-233-233-211 systemd: Started Session 352 of user root.
+12:10:03.686 12:10:04.689 sendMessageToConsole: 
+12:20:03.695 12:20:04.702 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:20:03.695 12:20:04.703 sendMessageToConsole: /var/log/messages: Mar  9 12:20:01 host-10-233-233-211 systemd: Started Session 353 of user root.
+12:20:03.695 12:20:04.703 sendMessageToConsole: 
+12:30:03.709 12:30:04.719 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:30:03.709 12:30:04.719 sendMessageToConsole: /var/log/messages: Mar  9 12:30:01 host-10-233-233-211 systemd: Started Session 354 of user root.
+12:30:03.709 12:30:04.719 sendMessageToConsole: 
+12:40:03.722 12:40:04.735 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:40:03.722 12:40:04.735 sendMessageToConsole: /var/log/messages: Mar  9 12:40:01 host-10-233-233-211 systemd: Started Session 355 of user root.
+12:40:03.722 12:40:04.735 sendMessageToConsole: 
+12:50:03.735 12:50:04.749 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+12:50:03.735 12:50:04.750 sendMessageToConsole: /var/log/messages: Mar  9 12:50:01 host-10-233-233-211 systemd: Started Session 356 of user root.
+12:50:03.735 12:50:04.750 sendMessageToConsole: 
+13:00:03.750 13:00:04.765 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:00:03.750 13:00:04.765 sendMessageToConsole: /var/log/messages: Mar  9 13:00:01 host-10-233-233-211 systemd: Started Session 357 of user root.
+13:00:03.750 13:00:04.765 sendMessageToConsole: 
+13:01:03.753 13:01:04.769 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:01:03.753 13:01:04.769 sendMessageToConsole: /var/log/messages: Mar  9 13:01:01 host-10-233-233-211 systemd: Started Session 358 of user root.
+13:01:03.753 13:01:04.769 sendMessageToConsole: 
+13:10:03.768 13:10:04.785 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:10:03.768 13:10:04.786 sendMessageToConsole: /var/log/messages: Mar  9 13:10:01 host-10-233-233-211 systemd: Started Session 359 of user root.
+13:10:03.768 13:10:04.786 sendMessageToConsole: 
+13:20:03.783 13:20:04.802 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:20:03.783 13:20:04.802 sendMessageToConsole: /var/log/messages: Mar  9 13:20:01 host-10-233-233-211 systemd: Started Session 360 of user root.
+13:20:03.783 13:20:04.802 sendMessageToConsole: 
+13:30:03.794 13:30:04.815 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:30:03.794 13:30:04.816 sendMessageToConsole: /var/log/messages: Mar  9 13:30:01 host-10-233-233-211 systemd: Started Session 361 of user root.
+13:30:03.794 13:30:04.816 sendMessageToConsole: 
+13:40:03.806 13:40:04.830 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:40:03.806 13:40:04.830 sendMessageToConsole: /var/log/messages: Mar  9 13:40:01 host-10-233-233-211 systemd: Started Session 362 of user root.
+13:40:03.806 13:40:04.830 sendMessageToConsole: 
+13:50:03.821 13:50:04.846 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+13:50:03.821 13:50:04.847 sendMessageToConsole: /var/log/messages: Mar  9 13:50:01 host-10-233-233-211 systemd: Started Session 363 of user root.
+13:50:03.821 13:50:04.847 sendMessageToConsole: 
+14:00:03.836 14:00:04.863 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:00:03.836 14:00:04.864 sendMessageToConsole: /var/log/messages: Mar  9 14:00:01 host-10-233-233-211 systemd: Started Session 364 of user root.
+14:00:03.836 14:00:04.864 sendMessageToConsole: 
+14:01:03.840 14:01:04.868 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:01:03.840 14:01:04.868 sendMessageToConsole: /var/log/messages: Mar  9 14:01:01 host-10-233-233-211 systemd: Started Session 365 of user root.
+14:01:03.840 14:01:04.868 sendMessageToConsole: 
+14:10:03.852 14:10:04.882 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:10:03.852 14:10:04.882 sendMessageToConsole: /var/log/messages: Mar  9 14:10:01 host-10-233-233-211 systemd: Started Session 366 of user root.
+14:10:03.852 14:10:04.882 sendMessageToConsole: 
+14:20:03.891 14:20:04.916 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:20:03.891 14:20:04.917 sendMessageToConsole: /var/log/messages: Mar  9 14:20:01 host-10-233-233-211 systemd: Started Session 367 of user root.
+14:20:03.891 14:20:04.917 sendMessageToConsole: 
+14:30:03.901 14:30:04.934 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:30:03.901 14:30:04.934 sendMessageToConsole: /var/log/messages: Mar  9 14:30:01 host-10-233-233-211 systemd: Started Session 368 of user root.
+14:30:03.901 14:30:04.934 sendMessageToConsole: 
+14:40:03.915 14:40:04.950 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:40:03.915 14:40:04.950 sendMessageToConsole: /var/log/messages: Mar  9 14:40:01 host-10-233-233-211 systemd: Started Session 369 of user root.
+14:40:03.915 14:40:04.950 sendMessageToConsole: 
+14:50:03.930 14:50:04.967 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:50:03.930 14:50:04.968 sendMessageToConsole: /var/log/messages: Mar  9 14:50:01 host-10-233-233-211 systemd: Started Session 370 of user root.
+14:50:03.930 14:50:04.968 sendMessageToConsole: 
+15:00:03.945 15:00:04.984 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:00:03.945 15:00:04.985 sendMessageToConsole: /var/log/messages: Mar  9 15:00:01 host-10-233-233-211 systemd: Started Session 371 of user root.
+15:00:03.945 15:00:04.985 sendMessageToConsole: 
+15:01:03.949 15:01:04.988 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:01:03.949 15:01:04.988 sendMessageToConsole: /var/log/messages: Mar  9 15:01:01 host-10-233-233-211 systemd: Started Session 372 of user root.
+15:01:03.949 15:01:04.988 sendMessageToConsole: 
+15:10:03.965 15:10:05.005 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:10:03.965 15:10:05.006 sendMessageToConsole: /var/log/messages: Mar  9 15:10:01 host-10-233-233-211 systemd: Started Session 373 of user root.
+15:10:03.965 15:10:05.006 sendMessageToConsole: 
+15:20:03.978 15:20:05.021 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:20:03.978 15:20:05.021 sendMessageToConsole: /var/log/messages: Mar  9 15:20:01 host-10-233-233-211 systemd: Started Session 374 of user root.
+15:20:03.978 15:20:05.021 sendMessageToConsole: 
+15:30:03.994 15:30:05.039 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:30:03.994 15:30:05.039 sendMessageToConsole: /var/log/messages: Mar  9 15:30:01 host-10-233-233-211 systemd: Started Session 375 of user root.
+15:30:03.994 15:30:05.039 sendMessageToConsole: 
+15:40:04.009 15:40:05.055 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:40:04.009 15:40:05.056 sendMessageToConsole: /var/log/messages: Mar  9 15:40:01 host-10-233-233-211 systemd: Started Session 376 of user root.
+15:40:04.009 15:40:05.056 sendMessageToConsole: 
+15:50:04.026 15:50:05.075 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:50:04.026 15:50:05.075 sendMessageToConsole: /var/log/messages: Mar  9 15:50:01 host-10-233-233-211 systemd: Started Session 377 of user root.
+15:50:04.026 15:50:05.075 sendMessageToConsole: 
+16:00:04.044 16:00:05.093 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:00:04.044 16:00:05.094 sendMessageToConsole: /var/log/messages: Mar  9 16:00:01 host-10-233-233-211 systemd: Started Session 378 of user root.
+16:00:04.044 16:00:05.094 sendMessageToConsole: 
+16:01:04.047 16:01:05.098 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:01:04.047 16:01:05.098 sendMessageToConsole: /var/log/messages: Mar  9 16:01:01 host-10-233-233-211 systemd: Started Session 379 of user root.
+16:01:04.047 16:01:05.098 sendMessageToConsole: 
+16:10:04.066 16:10:05.115 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:10:04.066 16:10:05.115 sendMessageToConsole: /var/log/messages: Mar  9 16:10:01 host-10-233-233-211 systemd: Started Session 380 of user root.
+16:10:04.066 16:10:05.115 sendMessageToConsole: 
+16:20:04.082 16:20:05.135 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:20:04.082 16:20:05.136 sendMessageToConsole: /var/log/messages: Mar  9 16:20:01 host-10-233-233-211 systemd: Started Session 381 of user root.
+16:20:04.082 16:20:05.136 sendMessageToConsole: 
+16:30:04.099 16:30:05.155 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:30:04.099 16:30:05.155 sendMessageToConsole: /var/log/messages: Mar  9 16:30:01 host-10-233-233-211 systemd: Started Session 382 of user root.
+16:30:04.099 16:30:05.155 sendMessageToConsole: 
+16:40:04.115 16:40:05.174 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:40:04.115 16:40:05.174 sendMessageToConsole: /var/log/messages: Mar  9 16:40:01 host-10-233-233-211 systemd: Started Session 383 of user root.
+16:40:04.115 16:40:05.174 sendMessageToConsole: 
+16:43:49.125 16:43:50.183 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:43:49.125 16:43:50.184 sendMessageToConsole: /var/log/messages: Mar  9 16:43:45 host-10-233-233-211 systemd: Starting Cleanup of Temporary Directories...
+16:43:49.125 16:43:50.184 sendMessageToConsole: /var/log/messages: Mar  9 16:43:45 host-10-233-233-211 systemd: Started Cleanup of Temporary Directories.
+16:43:49.125 16:43:50.184 sendMessageToConsole: 
+16:50:04.138 16:50:05.198 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+16:50:04.138 16:50:05.198 sendMessageToConsole: /var/log/messages: Mar  9 16:50:01 host-10-233-233-211 systemd: Started Session 384 of user root.
+16:50:04.138 16:50:05.198 sendMessageToConsole: 
+17:00:04.154 17:00:05.216 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:00:04.154 17:00:05.217 sendMessageToConsole: /var/log/messages: Mar  9 17:00:01 host-10-233-233-211 systemd: Started Session 385 of user root.
+17:00:04.154 17:00:05.217 sendMessageToConsole: 
+17:01:04.159 17:01:05.221 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:01:04.159 17:01:05.221 sendMessageToConsole: /var/log/messages: Mar  9 17:01:01 host-10-233-233-211 systemd: Started Session 386 of user root.
+17:01:04.159 17:01:05.221 sendMessageToConsole: 
+17:10:04.176 17:10:05.239 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:10:04.176 17:10:05.240 sendMessageToConsole: /var/log/messages: Mar  9 17:10:01 host-10-233-233-211 systemd: Started Session 387 of user root.
+17:10:04.176 17:10:05.240 sendMessageToConsole: 
+17:20:04.194 17:20:05.259 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:20:04.194 17:20:05.260 sendMessageToConsole: /var/log/messages: Mar  9 17:20:01 host-10-233-233-211 systemd: Started Session 388 of user root.
+17:20:04.194 17:20:05.260 sendMessageToConsole: 
+17:30:04.228 17:30:05.296 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:30:04.228 17:30:05.296 sendMessageToConsole: /var/log/messages: Mar  9 17:30:01 host-10-233-233-211 systemd: Started Session 389 of user root.
+17:30:04.228 17:30:05.296 sendMessageToConsole: 
+17:40:04.246 17:40:05.317 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:40:04.246 17:40:05.317 sendMessageToConsole: /var/log/messages: Mar  9 17:40:01 host-10-233-233-211 systemd: Started Session 390 of user root.
+17:40:04.246 17:40:05.317 sendMessageToConsole: 
+17:50:04.290 17:50:05.361 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:50:04.290 17:50:05.362 sendMessageToConsole: /var/log/messages: Mar  9 17:50:01 host-10-233-233-211 systemd: Started Session 391 of user root.
+17:50:04.290 17:50:05.362 sendMessageToConsole: 
+18:00:04.308 18:00:05.381 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:00:04.308 18:00:05.381 sendMessageToConsole: /var/log/messages: Mar  9 18:00:01 host-10-233-233-211 systemd: Started Session 392 of user root.
+18:00:04.308 18:00:05.381 sendMessageToConsole: 
+18:01:04.312 18:01:05.387 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:01:04.312 18:01:05.387 sendMessageToConsole: /var/log/messages: Mar  9 18:01:01 host-10-233-233-211 systemd: Started Session 393 of user root.
+18:01:04.312 18:01:05.387 sendMessageToConsole: 
+18:10:04.328 18:10:05.403 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:10:04.328 18:10:05.404 sendMessageToConsole: /var/log/messages: Mar  9 18:10:01 host-10-233-233-211 systemd: Started Session 394 of user root.
+18:10:04.328 18:10:05.404 sendMessageToConsole: 
+18:20:04.352 18:20:05.422 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:20:04.352 18:20:05.422 sendMessageToConsole: /var/log/messages: Mar  9 18:20:01 host-10-233-233-211 systemd: Started Session 395 of user root.
+18:20:04.352 18:20:05.422 sendMessageToConsole: 
+18:30:04.363 18:30:05.442 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:30:04.363 18:30:05.443 sendMessageToConsole: /var/log/messages: Mar  9 18:30:01 host-10-233-233-211 systemd: Started Session 396 of user root.
+18:30:04.364 18:30:05.443 sendMessageToConsole: 
+18:40:04.381 18:40:05.462 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:40:04.381 18:40:05.462 sendMessageToConsole: /var/log/messages: Mar  9 18:40:01 host-10-233-233-211 systemd: Started Session 397 of user root.
+18:40:04.381 18:40:05.462 sendMessageToConsole: 
+18:50:04.397 18:50:05.481 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+18:50:04.397 18:50:05.481 sendMessageToConsole: /var/log/messages: Mar  9 18:50:01 host-10-233-233-211 systemd: Started Session 398 of user root.
+18:50:04.397 18:50:05.481 sendMessageToConsole: 
+19:00:04.413 19:00:05.499 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:00:04.413 19:00:05.499 sendMessageToConsole: /var/log/messages: Mar  9 19:00:01 host-10-233-233-211 systemd: Started Session 399 of user root.
+19:00:04.413 19:00:05.499 sendMessageToConsole: 
+19:01:04.418 19:01:05.503 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:01:04.418 19:01:05.503 sendMessageToConsole: /var/log/messages: Mar  9 19:01:01 host-10-233-233-211 systemd: Started Session 400 of user root.
+19:01:04.418 19:01:05.503 sendMessageToConsole: 
+19:10:04.434 19:10:05.522 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:10:04.434 19:10:05.522 sendMessageToConsole: /var/log/messages: Mar  9 19:10:01 host-10-233-233-211 systemd: Started Session 401 of user root.
+19:10:04.434 19:10:05.522 sendMessageToConsole: 
+19:20:04.452 19:20:05.540 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:20:04.452 19:20:05.541 sendMessageToConsole: /var/log/messages: Mar  9 19:20:01 host-10-233-233-211 systemd: Started Session 402 of user root.
+19:20:04.452 19:20:05.541 sendMessageToConsole: 
+19:30:04.473 19:30:05.561 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:30:04.473 19:30:05.561 sendMessageToConsole: /var/log/messages: Mar  9 19:30:01 host-10-233-233-211 systemd: Started Session 403 of user root.
+19:30:04.473 19:30:05.561 sendMessageToConsole: 
+19:40:04.487 19:40:05.581 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:40:04.487 19:40:05.581 sendMessageToConsole: /var/log/messages: Mar  9 19:40:01 host-10-233-233-211 systemd: Started Session 404 of user root.
+19:40:04.487 19:40:05.581 sendMessageToConsole: 
+19:50:04.506 19:50:05.600 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+19:50:04.506 19:50:05.601 sendMessageToConsole: /var/log/messages: Mar  9 19:50:01 host-10-233-233-211 systemd: Started Session 405 of user root.
+19:50:04.506 19:50:05.601 sendMessageToConsole: 
+20:00:04.525 20:00:05.619 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:00:04.525 20:00:05.619 sendMessageToConsole: /var/log/messages: Mar  9 20:00:01 host-10-233-233-211 systemd: Started Session 406 of user root.
+20:00:04.525 20:00:05.619 sendMessageToConsole: 
+20:01:04.566 20:01:05.662 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:01:04.566 20:01:05.663 sendMessageToConsole: /var/log/messages: Mar  9 20:01:01 host-10-233-233-211 systemd: Started Session 407 of user root.
+20:01:04.566 20:01:05.663 sendMessageToConsole: 
+20:10:04.581 20:10:05.679 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:10:04.581 20:10:05.679 sendMessageToConsole: /var/log/messages: Mar  9 20:10:01 host-10-233-233-211 systemd: Started Session 408 of user root.
+20:10:04.581 20:10:05.679 sendMessageToConsole: 
+20:20:04.599 20:20:05.699 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:20:04.599 20:20:05.700 sendMessageToConsole: /var/log/messages: Mar  9 20:20:01 host-10-233-233-211 systemd: Started Session 409 of user root.
+20:20:04.599 20:20:05.700 sendMessageToConsole: 
+20:30:04.615 20:30:05.718 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:30:04.615 20:30:05.718 sendMessageToConsole: /var/log/messages: Mar  9 20:30:01 host-10-233-233-211 systemd: Started Session 410 of user root.
+20:30:04.615 20:30:05.718 sendMessageToConsole: 
+20:40:04.629 20:40:05.735 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:40:04.629 20:40:05.735 sendMessageToConsole: /var/log/messages: Mar  9 20:40:01 host-10-233-233-211 systemd: Started Session 411 of user root.
+20:40:04.629 20:40:05.735 sendMessageToConsole: 
+20:50:04.650 20:50:05.753 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+20:50:04.650 20:50:05.754 sendMessageToConsole: /var/log/messages: Mar  9 20:50:01 host-10-233-233-211 systemd: Started Session 412 of user root.
+20:50:04.650 20:50:05.754 sendMessageToConsole: 
+21:00:04.669 21:00:05.777 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:00:04.669 21:00:05.777 sendMessageToConsole: /var/log/messages: Mar  9 21:00:02 host-10-233-233-211 systemd: Started Session 413 of user root.
+21:00:04.669 21:00:05.777 sendMessageToConsole: 
+21:01:04.673 21:01:05.781 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:01:04.673 21:01:05.781 sendMessageToConsole: /var/log/messages: Mar  9 21:01:01 host-10-233-233-211 systemd: Started Session 414 of user root.
+21:01:04.673 21:01:05.781 sendMessageToConsole: 
+21:10:04.689 21:10:05.800 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:10:04.690 21:10:05.800 sendMessageToConsole: /var/log/messages: Mar  9 21:10:01 host-10-233-233-211 systemd: Started Session 415 of user root.
+21:10:04.690 21:10:05.800 sendMessageToConsole: 
+21:20:04.707 21:20:05.819 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:20:04.707 21:20:05.820 sendMessageToConsole: /var/log/messages: Mar  9 21:20:01 host-10-233-233-211 systemd: Started Session 416 of user root.
+21:20:04.707 21:20:05.820 sendMessageToConsole: 
+21:30:04.723 21:30:05.838 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:30:04.724 21:30:05.838 sendMessageToConsole: /var/log/messages: Mar  9 21:30:01 host-10-233-233-211 systemd: Started Session 417 of user root.
+21:30:04.724 21:30:05.838 sendMessageToConsole: 
+21:40:04.743 21:40:05.857 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:40:04.743 21:40:05.857 sendMessageToConsole: /var/log/messages: Mar  9 21:40:01 host-10-233-233-211 systemd: Started Session 418 of user root.
+21:40:04.743 21:40:05.857 sendMessageToConsole: 
+21:50:04.757 21:50:05.874 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+21:50:04.757 21:50:05.875 sendMessageToConsole: /var/log/messages: Mar  9 21:50:01 host-10-233-233-211 systemd: Started Session 419 of user root.
+21:50:04.757 21:50:05.875 sendMessageToConsole: 
+22:00:04.775 22:00:05.896 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:00:04.775 22:00:05.896 sendMessageToConsole: /var/log/messages: Mar  9 22:00:01 host-10-233-233-211 systemd: Started Session 420 of user root.
+22:00:04.775 22:00:05.896 sendMessageToConsole: 
+22:01:04.782 22:01:05.901 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:01:04.782 22:01:05.902 sendMessageToConsole: /var/log/messages: Mar  9 22:01:01 host-10-233-233-211 systemd: Started Session 421 of user root.
+22:01:04.782 22:01:05.902 sendMessageToConsole: 
+22:10:04.800 22:10:05.919 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:10:04.800 22:10:05.919 sendMessageToConsole: /var/log/messages: Mar  9 22:10:01 host-10-233-233-211 systemd: Started Session 422 of user root.
+22:10:04.800 22:10:05.919 sendMessageToConsole: 
+22:20:04.816 22:20:05.940 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:20:04.816 22:20:05.940 sendMessageToConsole: /var/log/messages: Mar  9 22:20:01 host-10-233-233-211 systemd: Started Session 423 of user root.
+22:20:04.816 22:20:05.940 sendMessageToConsole: 
+22:30:04.829 22:30:05.953 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:30:04.829 22:30:05.954 sendMessageToConsole: /var/log/messages: Mar  9 22:30:01 host-10-233-233-211 systemd: Started Session 424 of user root.
+22:30:04.829 22:30:05.954 sendMessageToConsole: 
+22:40:04.849 22:40:05.970 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:40:04.850 22:40:05.970 sendMessageToConsole: /var/log/messages: Mar  9 22:40:01 host-10-233-233-211 systemd: Started Session 425 of user root.
+22:40:04.850 22:40:05.970 sendMessageToConsole: 
+22:50:04.855 22:50:05.985 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+22:50:04.855 22:50:05.985 sendMessageToConsole: /var/log/messages: Mar  9 22:50:01 host-10-233-233-211 systemd: Started Session 426 of user root.
+22:50:04.855 22:50:05.985 sendMessageToConsole: 
+23:00:04.870 23:00:06.002 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:00:04.870 23:00:06.002 sendMessageToConsole: /var/log/messages: Mar  9 23:00:01 host-10-233-233-211 systemd: Started Session 427 of user root.
+23:00:04.870 23:00:06.002 sendMessageToConsole: 
+23:01:04.874 23:01:06.006 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:01:04.874 23:01:06.006 sendMessageToConsole: /var/log/messages: Mar  9 23:01:01 host-10-233-233-211 systemd: Started Session 428 of user root.
+23:01:04.874 23:01:06.006 sendMessageToConsole: 
+23:10:04.889 23:10:06.021 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:10:04.889 23:10:06.021 sendMessageToConsole: /var/log/messages: Mar  9 23:10:01 host-10-233-233-211 systemd: Started Session 429 of user root.
+23:10:04.889 23:10:06.021 sendMessageToConsole: 
+23:20:04.899 23:20:06.035 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:20:04.899 23:20:06.036 sendMessageToConsole: /var/log/messages: Mar  9 23:20:01 host-10-233-233-211 systemd: Started Session 430 of user root.
+23:20:04.899 23:20:06.036 sendMessageToConsole: 
+23:30:04.912 23:30:06.050 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:30:04.912 23:30:06.050 sendMessageToConsole: /var/log/messages: Mar  9 23:30:01 host-10-233-233-211 systemd: Started Session 431 of user root.
+23:30:04.912 23:30:06.050 sendMessageToConsole: 
+23:40:04.933 23:40:06.072 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:40:04.933 23:40:06.073 sendMessageToConsole: /var/log/messages: Mar  9 23:40:01 host-10-233-233-211 systemd: Started Session 432 of user root.
+23:40:04.933 23:40:06.073 sendMessageToConsole: 
+23:50:04.948 23:50:06.089 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:50:04.948 23:50:06.089 sendMessageToConsole: /var/log/messages: Mar  9 23:50:01 host-10-233-233-211 systemd: Started Session 433 of user root.
+23:50:04.948 23:50:06.089 sendMessageToConsole: 
+23:53:04.957 23:53:06.098 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:53:04.957 23:53:06.099 sendMessageToConsole: /var/log/messages: Mar  9 23:53:01 host-10-233-233-211 systemd: Started Session 434 of user root.
+23:53:04.957 23:53:06.099 sendMessageToConsole: 
+23:59:59.969 00:00:01.112 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:59:59.969 00:00:01.113 sendMessageToConsole: /var/log/messages: Mar 10 00:00:01 host-10-233-233-211 systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+23:59:59.969 00:00:01.113 sendMessageToConsole: /var/log/messages: Mar 10 00:00:01 host-10-233-233-211 systemd: Started Session 435 of user root.
+23:59:59.969 00:00:01.113 sendMessageToConsole: 
+00:00:54.974 00:00:56.118 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:00:54.974 00:00:56.118 sendMessageToConsole: /var/log/messages: Mar 10 00:00:51 host-10-233-233-211 systemd: Started update of the root trust anchor for DNSSEC validation in unbound.
+00:00:54.974 00:00:56.118 sendMessageToConsole: 
+00:00:59.977 00:01:01.120 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:00:59.977 00:01:01.121 sendMessageToConsole: /var/log/messages: Mar 10 00:01:01 host-10-233-233-211 systemd: Started Session 436 of user root.
+00:00:59.977 00:01:01.121 sendMessageToConsole: 
+00:10:04.994 00:10:06.139 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:10:04.994 00:10:06.139 sendMessageToConsole: /var/log/messages: Mar 10 00:10:01 host-10-233-233-211 systemd: Started Session 437 of user root.
+00:10:04.994 00:10:06.139 sendMessageToConsole: 
+00:20:05.009 00:20:06.155 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:20:05.009 00:20:06.156 sendMessageToConsole: /var/log/messages: Mar 10 00:20:01 host-10-233-233-211 systemd: Started Session 438 of user root.
+00:20:05.009 00:20:06.156 sendMessageToConsole: 
+00:30:05.025 00:30:06.174 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:30:05.025 00:30:06.174 sendMessageToConsole: /var/log/messages: Mar 10 00:30:01 host-10-233-233-211 systemd: Started Session 439 of user root.
+00:30:05.025 00:30:06.174 sendMessageToConsole: 
+00:40:05.038 00:40:06.189 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:40:05.038 00:40:06.190 sendMessageToConsole: /var/log/messages: Mar 10 00:40:01 host-10-233-233-211 systemd: Started Session 440 of user root.
+00:40:05.038 00:40:06.190 sendMessageToConsole: 
+00:50:05.051 00:50:06.204 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+00:50:05.051 00:50:06.204 sendMessageToConsole: /var/log/messages: Mar 10 00:50:01 host-10-233-233-211 systemd: Started Session 441 of user root.
+00:50:05.051 00:50:06.204 sendMessageToConsole: 
+01:00:05.064 01:00:06.218 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:00:05.064 01:00:06.218 sendMessageToConsole: /var/log/messages: Mar 10 01:00:01 host-10-233-233-211 systemd: Started Session 442 of user root.
+01:00:05.064 01:00:06.218 sendMessageToConsole: /var/log/messages: Mar 10 01:00:01 host-10-233-233-211 systemd: Started Session 443 of user root.
+01:00:05.064 01:00:06.219 sendMessageToConsole: 
+01:01:05.097 01:01:06.252 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:01:05.097 01:01:06.253 sendMessageToConsole: /var/log/messages: Mar 10 01:01:01 host-10-233-233-211 systemd: Started Session 444 of user root.
+01:01:05.097 01:01:06.253 sendMessageToConsole: 
+01:10:05.111 01:10:06.265 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:10:05.111 01:10:06.265 sendMessageToConsole: /var/log/messages: Mar 10 01:10:01 host-10-233-233-211 systemd: Started Session 445 of user root.
+01:10:05.111 01:10:06.265 sendMessageToConsole: 
+01:20:05.120 01:20:06.279 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:20:05.120 01:20:06.279 sendMessageToConsole: /var/log/messages: Mar 10 01:20:01 host-10-233-233-211 systemd: Started Session 446 of user root.
+01:20:05.120 01:20:06.279 sendMessageToConsole: 
+01:30:05.134 01:30:06.294 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:30:05.134 01:30:06.294 sendMessageToConsole: /var/log/messages: Mar 10 01:30:01 host-10-233-233-211 systemd: Started Session 447 of user root.
+01:30:05.134 01:30:06.294 sendMessageToConsole: 
+01:40:05.146 01:40:06.307 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:40:05.146 01:40:06.307 sendMessageToConsole: /var/log/messages: Mar 10 01:40:01 host-10-233-233-211 systemd: Started Session 448 of user root.
+01:40:05.146 01:40:06.307 sendMessageToConsole: 
+01:50:05.157 01:50:06.323 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+01:50:05.157 01:50:06.323 sendMessageToConsole: /var/log/messages: Mar 10 01:50:01 host-10-233-233-211 systemd: Started Session 449 of user root.
+01:50:05.157 01:50:06.323 sendMessageToConsole: 
+02:00:05.172 02:00:06.338 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:00:05.172 02:00:06.339 sendMessageToConsole: /var/log/messages: Mar 10 02:00:01 host-10-233-233-211 systemd: Started Session 450 of user root.
+02:00:05.172 02:00:06.339 sendMessageToConsole: 
+02:01:05.178 02:01:06.343 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:01:05.178 02:01:06.343 sendMessageToConsole: /var/log/messages: Mar 10 02:01:01 host-10-233-233-211 systemd: Started Session 451 of user root.
+02:01:05.178 02:01:06.343 sendMessageToConsole: 
+02:10:05.191 02:10:06.357 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:10:05.191 02:10:06.358 sendMessageToConsole: /var/log/messages: Mar 10 02:10:01 host-10-233-233-211 systemd: Started Session 452 of user root.
+02:10:05.191 02:10:06.358 sendMessageToConsole: 
+02:20:05.204 02:20:06.371 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:20:05.204 02:20:06.371 sendMessageToConsole: /var/log/messages: Mar 10 02:20:01 host-10-233-233-211 systemd: Started Session 453 of user root.
+02:20:05.204 02:20:06.371 sendMessageToConsole: 
+02:30:05.214 02:30:06.384 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:30:05.214 02:30:06.384 sendMessageToConsole: /var/log/messages: Mar 10 02:30:02 host-10-233-233-211 systemd: Started Session 454 of user root.
+02:30:05.214 02:30:06.384 sendMessageToConsole: 
+02:40:00.223 02:40:01.397 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:40:00.223 02:40:01.398 sendMessageToConsole: /var/log/messages: Mar 10 02:40:01 host-10-233-233-211 systemd: Started Session 455 of user root.
+02:40:00.223 02:40:01.398 sendMessageToConsole: 
+02:50:00.238 02:50:01.414 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+02:50:00.238 02:50:01.414 sendMessageToConsole: /var/log/messages: Mar 10 02:50:01 host-10-233-233-211 systemd: Started Session 456 of user root.
+02:50:00.238 02:50:01.414 sendMessageToConsole: 
+03:00:00.254 03:00:01.432 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:00:00.254 03:00:01.433 sendMessageToConsole: /var/log/messages: Mar 10 03:00:01 host-10-233-233-211 systemd: Started Session 457 of user root.
+03:00:00.254 03:00:01.433 sendMessageToConsole: 
+03:01:00.259 03:01:01.438 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:01:00.260 03:01:01.438 sendMessageToConsole: /var/log/messages: Mar 10 03:01:01 host-10-233-233-211 systemd: Started Session 458 of user root.
+03:01:00.260 03:01:01.438 sendMessageToConsole: 
+03:10:00.272 03:10:01.453 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:10:00.272 03:10:01.453 sendMessageToConsole: /var/log/messages: Mar 10 03:10:01 host-10-233-233-211 systemd: Started Session 459 of user root.
+03:10:00.272 03:10:01.453 sendMessageToConsole: 
+03:20:00.289 03:20:01.470 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:20:00.289 03:20:01.471 sendMessageToConsole: /var/log/messages: Mar 10 03:20:01 host-10-233-233-211 systemd: Started Session 460 of user root.
+03:20:00.289 03:20:01.471 sendMessageToConsole: 
+03:30:00.304 03:30:01.488 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:30:00.304 03:30:01.489 sendMessageToConsole: /var/log/messages: Mar 10 03:30:01 host-10-233-233-211 systemd: Started Session 461 of user root.
+03:30:00.304 03:30:01.489 sendMessageToConsole: 
+03:40:00.317 03:40:01.503 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:40:00.317 03:40:01.504 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 logrotate: ALERT exited abnormally with [1]
+03:40:00.317 03:40:01.504 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 systemd: Started Session 462 of user root.
+03:40:00.317 03:40:01.504 sendMessageToConsole: 
+03:40:05.322 03:40:06.507 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 kernel: traps: mandb[30877] general protection ip:7f2430733d69 sp:7ffd726cc0a8 error:0 in libc-2.17.so[7f24305e0000+1c2000]
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-hook-ccpp: Process 30877 (mandb) of user 0 killed by SIGSEGV - dumping core
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0058 page 1724128148: illegal page type or format
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0061 PANIC: Invalid argument
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbcursor->c_get: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: error(-30973) getting "mandb" records from Basenames index: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbcursor->c_close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from db->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB1581 File handles still open at environment close
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Packages
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Name
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB1582 Open file handle: /var/lib/rpm/Basenames
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: rpmdb: BDB0060 PANIC: fatal region error detected; run recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: error: db5 error(-30973) from dbenv->close: BDB0087 DB_RUNRECOVERY: Fatal error, run database recovery
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: Executable '/usr/bin/mandb' doesn't belong to any package and ProcessUnpackaged is set to 'no'
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: 'post-create' on '/var/spool/abrt/ccpp-2019-03-10-03:40:01-30877' exited with 1
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:01 host-10-233-233-211 abrt-server: Deleting problem directory '/var/spool/abrt/ccpp-2019-03-10-03:40:01-30877'
+03:40:05.322 03:40:06.508 sendMessageToConsole: /var/log/messages: Mar 10 03:40:02 host-10-233-233-211 rhsmd: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
+03:40:05.322 03:40:06.508 sendMessageToConsole: 
+03:50:00.338 03:50:01.525 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+03:50:00.338 03:50:01.526 sendMessageToConsole: /var/log/messages: Mar 10 03:50:01 host-10-233-233-211 systemd: Started Session 463 of user root.
+03:50:00.338 03:50:01.526 sendMessageToConsole: 
+04:00:00.355 04:00:01.545 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:00:00.355 04:00:01.545 sendMessageToConsole: /var/log/messages: Mar 10 04:00:01 host-10-233-233-211 systemd: Started Session 464 of user root.
+04:00:00.355 04:00:01.545 sendMessageToConsole: 
+04:01:00.359 04:01:01.550 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:01:00.359 04:01:01.550 sendMessageToConsole: /var/log/messages: Mar 10 04:01:01 host-10-233-233-211 systemd: Started Session 465 of user root.
+04:01:00.359 04:01:01.550 sendMessageToConsole: 
+04:10:05.377 04:10:06.569 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:10:05.377 04:10:06.570 sendMessageToConsole: /var/log/messages: Mar 10 04:10:01 host-10-233-233-211 systemd: Started Session 466 of user root.
+04:10:05.377 04:10:06.570 sendMessageToConsole: 
+04:20:05.395 04:20:06.588 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:20:05.395 04:20:06.588 sendMessageToConsole: /var/log/messages: Mar 10 04:20:01 host-10-233-233-211 systemd: Started Session 467 of user root.
+04:20:05.395 04:20:06.588 sendMessageToConsole: 
+04:30:05.412 04:30:06.607 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:30:05.412 04:30:06.608 sendMessageToConsole: /var/log/messages: Mar 10 04:30:01 host-10-233-233-211 systemd: Started Session 468 of user root.
+04:30:05.412 04:30:06.608 sendMessageToConsole: 
+04:40:05.432 04:40:06.629 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:40:05.432 04:40:06.629 sendMessageToConsole: /var/log/messages: Mar 10 04:40:01 host-10-233-233-211 systemd: Started Session 469 of user root.
+04:40:05.432 04:40:06.629 sendMessageToConsole: 
+04:50:05.449 04:50:06.648 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+04:50:05.449 04:50:06.648 sendMessageToConsole: /var/log/messages: Mar 10 04:50:01 host-10-233-233-211 systemd: Started Session 470 of user root.
+04:50:05.449 04:50:06.648 sendMessageToConsole: 
+05:00:05.465 05:00:06.666 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:00:05.465 05:00:06.667 sendMessageToConsole: /var/log/messages: Mar 10 05:00:01 host-10-233-233-211 systemd: Started Session 471 of user root.
+05:00:05.465 05:00:06.667 sendMessageToConsole: 
+05:01:05.470 05:01:06.672 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:01:05.470 05:01:06.672 sendMessageToConsole: /var/log/messages: Mar 10 05:01:01 host-10-233-233-211 systemd: Started Session 472 of user root.
+05:01:05.470 05:01:06.672 sendMessageToConsole: 
+05:10:05.486 05:10:06.688 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:10:05.486 05:10:06.689 sendMessageToConsole: /var/log/messages: Mar 10 05:10:01 host-10-233-233-211 systemd: Started Session 473 of user root.
+05:10:05.486 05:10:06.689 sendMessageToConsole: 
+05:20:05.499 05:20:06.703 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:20:05.499 05:20:06.704 sendMessageToConsole: /var/log/messages: Mar 10 05:20:01 host-10-233-233-211 systemd: Started Session 474 of user root.
+05:20:05.500 05:20:06.704 sendMessageToConsole: 
+05:30:05.512 05:30:06.717 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:30:05.512 05:30:06.717 sendMessageToConsole: /var/log/messages: Mar 10 05:30:01 host-10-233-233-211 systemd: Started Session 475 of user root.
+05:30:05.512 05:30:06.717 sendMessageToConsole: 
+05:40:05.526 05:40:06.733 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:40:05.526 05:40:06.733 sendMessageToConsole: /var/log/messages: Mar 10 05:40:02 host-10-233-233-211 systemd: Started Session 476 of user root.
+05:40:05.526 05:40:06.733 sendMessageToConsole: 
+05:50:00.541 05:50:01.752 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+05:50:00.541 05:50:01.753 sendMessageToConsole: /var/log/messages: Mar 10 05:50:01 host-10-233-233-211 systemd: Started Session 477 of user root.
+05:50:00.541 05:50:01.753 sendMessageToConsole: 
+06:00:00.559 06:00:01.772 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:00:00.559 06:00:01.772 sendMessageToConsole: /var/log/messages: Mar 10 06:00:01 host-10-233-233-211 systemd: Started Session 478 of user root.
+06:00:00.559 06:00:01.772 sendMessageToConsole: 
+06:01:00.563 06:01:01.776 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:01:00.563 06:01:01.776 sendMessageToConsole: /var/log/messages: Mar 10 06:01:01 host-10-233-233-211 systemd: Started Session 479 of user root.
+06:01:00.563 06:01:01.776 sendMessageToConsole: 
+06:10:00.580 06:10:01.795 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:10:00.580 06:10:01.796 sendMessageToConsole: /var/log/messages: Mar 10 06:10:01 host-10-233-233-211 systemd: Started Session 480 of user root.
+06:10:00.580 06:10:01.796 sendMessageToConsole: 
+06:20:00.595 06:20:01.812 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:20:00.596 06:20:01.812 sendMessageToConsole: /var/log/messages: Mar 10 06:20:01 host-10-233-233-211 systemd: Started Session 481 of user root.
+06:20:00.596 06:20:01.812 sendMessageToConsole: 
+06:30:00.610 06:30:01.829 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:30:00.610 06:30:01.829 sendMessageToConsole: /var/log/messages: Mar 10 06:30:01 host-10-233-233-211 systemd: Started Session 482 of user root.
+06:30:00.610 06:30:01.829 sendMessageToConsole: 
+06:40:00.627 06:40:01.848 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:40:00.627 06:40:01.848 sendMessageToConsole: /var/log/messages: Mar 10 06:40:01 host-10-233-233-211 systemd: Started Session 483 of user root.
+06:40:00.627 06:40:01.848 sendMessageToConsole: 
+06:50:00.642 06:50:01.865 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+06:50:00.642 06:50:01.865 sendMessageToConsole: /var/log/messages: Mar 10 06:50:01 host-10-233-233-211 systemd: Started Session 484 of user root.
+06:50:00.642 06:50:01.865 sendMessageToConsole: 
+07:00:00.656 07:00:01.881 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:00:00.656 07:00:01.881 sendMessageToConsole: /var/log/messages: Mar 10 07:00:01 host-10-233-233-211 systemd: Started Session 485 of user root.
+07:00:00.656 07:00:01.881 sendMessageToConsole: 
+07:01:00.661 07:01:01.886 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:01:00.661 07:01:01.887 sendMessageToConsole: /var/log/messages: Mar 10 07:01:01 host-10-233-233-211 systemd: Started Session 486 of user root.
+07:01:00.661 07:01:01.887 sendMessageToConsole: 
+07:10:00.678 07:10:01.904 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:10:00.678 07:10:01.904 sendMessageToConsole: /var/log/messages: Mar 10 07:10:01 host-10-233-233-211 systemd: Started Session 487 of user root.
+07:10:00.678 07:10:01.904 sendMessageToConsole: 
+07:20:00.693 07:20:01.922 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:20:00.693 07:20:01.922 sendMessageToConsole: /var/log/messages: Mar 10 07:20:01 host-10-233-233-211 systemd: Started Session 488 of user root.
+07:20:00.693 07:20:01.922 sendMessageToConsole: 
+07:30:00.711 07:30:01.941 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:30:00.711 07:30:01.942 sendMessageToConsole: /var/log/messages: Mar 10 07:30:01 host-10-233-233-211 systemd: Started Session 489 of user root.
+07:30:00.711 07:30:01.942 sendMessageToConsole: 
+07:40:00.729 07:40:01.961 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:40:00.729 07:40:01.961 sendMessageToConsole: /var/log/messages: Mar 10 07:40:01 host-10-233-233-211 systemd: Started Session 490 of user root.
+07:40:00.729 07:40:01.961 sendMessageToConsole: 
+07:50:00.748 07:50:01.982 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+07:50:00.748 07:50:01.983 sendMessageToConsole: /var/log/messages: Mar 10 07:50:01 host-10-233-233-211 systemd: Started Session 491 of user root.
+07:50:00.748 07:50:01.983 sendMessageToConsole: 
+08:00:00.765 08:00:02.001 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:00:00.765 08:00:02.001 sendMessageToConsole: /var/log/messages: Mar 10 08:00:01 host-10-233-233-211 systemd: Started Session 492 of user root.
+08:00:00.765 08:00:02.001 sendMessageToConsole: 
+08:01:00.770 08:01:02.006 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:01:00.770 08:01:02.006 sendMessageToConsole: /var/log/messages: Mar 10 08:01:01 host-10-233-233-211 systemd: Started Session 493 of user root.
+08:01:00.770 08:01:02.006 sendMessageToConsole: 
+08:10:00.786 08:10:02.024 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:10:00.786 08:10:02.024 sendMessageToConsole: /var/log/messages: Mar 10 08:10:01 host-10-233-233-211 systemd: Started Session 494 of user root.
+08:10:00.786 08:10:02.024 sendMessageToConsole: 
+08:20:00.801 08:20:02.042 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:20:00.801 08:20:02.042 sendMessageToConsole: /var/log/messages: Mar 10 08:20:01 host-10-233-233-211 systemd: Started Session 495 of user root.
+08:20:00.801 08:20:02.042 sendMessageToConsole: 
+08:30:00.814 08:30:02.055 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:30:00.814 08:30:02.056 sendMessageToConsole: /var/log/messages: Mar 10 08:30:01 host-10-233-233-211 systemd: Started Session 496 of user root.
+08:30:00.814 08:30:02.056 sendMessageToConsole: 
+08:40:00.827 08:40:02.071 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:40:00.828 08:40:02.071 sendMessageToConsole: /var/log/messages: Mar 10 08:40:01 host-10-233-233-211 systemd: Started Session 497 of user root.
+08:40:00.828 08:40:02.071 sendMessageToConsole: 
+08:50:00.843 08:50:02.089 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+08:50:00.843 08:50:02.089 sendMessageToConsole: /var/log/messages: Mar 10 08:50:01 host-10-233-233-211 systemd: Started Session 498 of user root.
+08:50:00.843 08:50:02.089 sendMessageToConsole: 
+09:00:00.862 09:00:02.109 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:00:00.862 09:00:02.110 sendMessageToConsole: /var/log/messages: Mar 10 09:00:01 host-10-233-233-211 systemd: Started Session 499 of user root.
+09:00:00.862 09:00:02.110 sendMessageToConsole: 
+09:01:00.867 09:01:02.115 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:01:00.867 09:01:02.115 sendMessageToConsole: /var/log/messages: Mar 10 09:01:01 host-10-233-233-211 systemd: Started Session 500 of user root.
+09:01:00.867 09:01:02.115 sendMessageToConsole: 
+09:10:00.883 09:10:02.133 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:10:00.883 09:10:02.133 sendMessageToConsole: /var/log/messages: Mar 10 09:10:01 host-10-233-233-211 systemd: Started Session 501 of user root.
+09:10:00.883 09:10:02.133 sendMessageToConsole: 
+09:20:00.935 09:20:02.186 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:20:00.935 09:20:02.187 sendMessageToConsole: /var/log/messages: Mar 10 09:20:01 host-10-233-233-211 systemd: Started Session 502 of user root.
+09:20:00.935 09:20:02.188 sendMessageToConsole: 
+09:30:00.953 09:30:02.206 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:30:00.953 09:30:02.207 sendMessageToConsole: /var/log/messages: Mar 10 09:30:01 host-10-233-233-211 systemd: Started Session 503 of user root.
+09:30:00.953 09:30:02.207 sendMessageToConsole: 
+09:40:00.975 09:40:02.230 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:40:00.975 09:40:02.231 sendMessageToConsole: /var/log/messages: Mar 10 09:40:01 host-10-233-233-211 systemd: Started Session 504 of user root.
+09:40:00.975 09:40:02.231 sendMessageToConsole: 
+09:50:00.993 09:50:02.250 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:50:00.993 09:50:02.250 sendMessageToConsole: /var/log/messages: Mar 10 09:50:01 host-10-233-233-211 systemd: Started Session 505 of user root.
+09:50:00.993 09:50:02.250 sendMessageToConsole: 
+10:00:01.009 10:00:02.269 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:00:01.009 10:00:02.269 sendMessageToConsole: /var/log/messages: Mar 10 10:00:01 host-10-233-233-211 systemd: Started Session 506 of user root.
+10:00:01.009 10:00:02.269 sendMessageToConsole: 
+10:01:01.014 10:01:02.274 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:01:01.014 10:01:02.274 sendMessageToConsole: /var/log/messages: Mar 10 10:01:01 host-10-233-233-211 systemd: Started Session 507 of user root.
+10:01:01.014 10:01:02.274 sendMessageToConsole: 
+10:10:01.029 10:10:02.290 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:10:01.029 10:10:02.290 sendMessageToConsole: /var/log/messages: Mar 10 10:10:01 host-10-233-233-211 systemd: Started Session 508 of user root.
+10:10:01.029 10:10:02.290 sendMessageToConsole: 
+10:20:01.045 10:20:02.308 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:20:01.045 10:20:02.309 sendMessageToConsole: /var/log/messages: Mar 10 10:20:01 host-10-233-233-211 systemd: Started Session 509 of user root.
+10:20:01.045 10:20:02.309 sendMessageToConsole: 
+10:25:53.236 10:25:54.501 Interrupts issued for tasks WG_task: 6
+10:25:53.236 10:25:54.501 WT Task interrupted at put
+10:25:53.236 10:25:54.502 Ended WT_task
+10:25:53.337 10:25:54.602 Sent 1 interrupts to 1 waiting IO_task threads
+10:25:53.337 10:25:54.602 Java Heap in MB. max:  910.500; current:  254.000; used:   22.459; free:  231.541
+10:25:53.337 10:25:54.602 Maximum native memory allocation:      131,072; Current allocation:            0
+10:25:53.337 10:25:54.602 End of run
+10:25:53.337 10:25:54.603 **********
+10:25:53.337 
+10:25:53.337 
+10:25:54.239 10:25:55.497 Master is requesting slave shutdown
+10:25:54.239 10:25:55.498 Java Heap in MB. max:  910.500; current:  254.000; used:   22.471; free:  231.529

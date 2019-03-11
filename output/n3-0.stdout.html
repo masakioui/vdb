@@ -1,54 +1,47 @@
 <title>Vdbench output/n3-0.stdout.html</title><pre>
 stdout/stderr for slave=n3-0
 
-16:16:46.543 16:16:48.578 SlaveJvm execution parameter:  '-m 10.233.233.72'
-16:16:46.543 16:16:48.578 SlaveJvm execution parameter:  '-n 10.233.233.146-12-190308-16.16.45.711'
-16:16:46.543 16:16:48.578 SlaveJvm execution parameter:  '-l n3-0'
-16:16:46.543 16:16:48.578 SlaveJvm execution parameter:  '-p 5570'
-16:16:46.543 16:16:48.578 SlaveJvm positional parameter: 'SlaveJvm'
-16:16:46.636 16:16:48.670 successfully connected to master 10.233.233.72
-16:16:46.636 16:16:48.671 Connection to 10.233.233.72 using port 5570 successful
-16:16:46.826 16:16:48.861 ticks_per_second: 100
-16:16:46.832 16:16:48.867 execute(): ls -l /var/log/oceanstor
-16:16:46.855 16:16:48.890 Configuration interpretation took 0.03 seconds
+18:11:36.089 18:11:38.170 SlaveJvm execution parameter:  '-m 10.233.233.72'
+18:11:36.089 18:11:38.171 SlaveJvm execution parameter:  '-n 10.233.233.146-11-190308-18.11.35.399'
+18:11:36.089 18:11:38.171 SlaveJvm execution parameter:  '-l n3-0'
+18:11:36.089 18:11:38.171 SlaveJvm execution parameter:  '-p 5570'
+18:11:36.090 18:11:38.171 SlaveJvm positional parameter: 'SlaveJvm'
+18:11:36.220 18:11:38.301 successfully connected to master 10.233.233.72
+18:11:36.220 18:11:38.302 Connection to 10.233.233.72 using port 5570 successful
+18:11:36.502 18:11:38.584 ticks_per_second: 100
+18:11:36.519 18:11:38.600 Configuration interpretation took 0.02 seconds
 
-Link to Run Definitions:         <A HREF="#_305623748">rd1 For loops: None</A>
+Link to Run Definitions:         <A HREF="#_992136656">random_write For loops: None</A>
 
-16:16:47.023 16:16:49.059 Beginning of run setup
-16:16:47.023 16:16:49.059 **********************
-16:16:47.023 
-16:16:47.023 
-16:16:47.041 16:16:49.076 File '/var/log/messages.1' does not exist. Monitoring bypassed
-16:16:47.081 16:16:49.116 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
-16:16:47.106 16:16:49.142 Completed the creation of the directory list for /var/log/oceanstor: 176 directories.
-16:16:47.843 16:16:49.878 Generated 66,000 file names; total anchor size: 199.316g (214,013,614,152)
-16:16:47.843 16:16:49.879 During anchor creation for anchor=/var/log/oceanstor there were 176 directories and 66000 files
-16:16:47.844 16:16:49.879 Completed initializeFileAnchor for fsd1: 0.76
-16:16:47.853 16:16:49.889 Started 4 threads for fwd=fwd1,fsd=fsd1,operation=read
-16:16:47.853 16:16:49.889 Started 4 FwgThreads for rd=rd1 For loops: None
-16:16:47.853 16:16:49.889 Waiting for task synchronization
-16:16:47.853 16:16:49.889 Requesting full garbage collection
-16:16:47.857 16:16:49.890 GcTracker: cum:   5 intv:  5 ms:     113 mss:  0.00% Heap_MB max:   911 curr:   221 used:    52 free:   169 
-16:16:47.922 16:16:49.956 GcTracker: cum:   7 intv:  2 ms:      65 mss:  0.00% Heap_MB max:   911 curr:   363 used:    28 free:   335 
-16:16:47.923 16:16:49.956 task_wait_start_complete() end
+18:11:36.734 18:11:38.815 Beginning of run setup
+18:11:36.734 18:11:38.816 **********************
+18:11:36.734 
+18:11:36.734 
+18:11:36.752 18:11:38.834 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:11:36.852 18:11:38.934 Opening sd=sd_var,lun=/dev/vda3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:11:36.854 18:11:38.936 Opening sd=sd_varlog,lun=/dev/vda6; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:11:36.867 18:11:38.949 Started 6 Workload Generator threads.
+18:11:36.916 18:11:38.998 Started  1 i/o threads for sd_varlog
+18:11:36.916 18:11:38.998 Started  1 i/o threads for sd_var
+18:11:36.917 18:11:38.999 Started a total of  2 i/o threads.
+18:11:36.917 18:11:38.999 Waiting for task synchronization
+18:11:36.917 18:11:38.999 task_wait_start_complete: IO_task /dev/vda6 1
+18:11:37.132 18:11:39.214 Requesting full garbage collection
+18:11:37.133 18:11:39.215 GcTracker: cum:   1 intv:  1 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:   147 free:   105 
+18:11:37.211 18:11:39.293 GcTracker: cum:   3 intv:  2 ms:      77 mss:  0.00% Heap_MB max:   911 curr:   284 used:    17 free:   267 
+18:11:37.211 18:11:39.293 task_wait_start_complete() end
 
-<a name="_305623748"></a><i><b>16:16:49.001 Starting RD=rd1; elapsed=300; fwdrate=max. For loops: None</b></i>
+<a name="_992136656"></a><i><b>18:11:38.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
 
-16:16:49.003 16:16:51.039 task_run_all(): 5 tasks
-16:20:02.049 16:20:04.084 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
-16:20:02.049 16:20:04.085 sendMessageToConsole: /var/log/messages: Mar  8 16:20:01 host-10-233-233-146 systemd: Started Session 189 of user root.
-16:20:02.049 16:20:04.085 sendMessageToConsole: 
-16:21:54.481 16:21:56.519 
-16:21:54.482 16:21:56.519 Miscellaneous statistics:
-16:21:54.482 16:21:56.520 READ_OPENS          Files opened for read activity:              27,723
-16:21:54.482 16:21:56.520 FILE_BUSY           File busy:                                        4
-16:21:54.482 16:21:56.520 FILE_CLOSES         Close requests:                              27,723
-16:21:54.482 16:21:56.520 
-16:21:54.482 16:21:56.520 Java Heap in MB. max:  910.500; current:  381.000; used:  220.581; free:  160.419
-16:21:54.482 16:21:56.520 Maximum native memory allocation:       16,384; Current allocation:       16,384
-16:21:54.482 16:21:56.520 End of run
-16:21:54.482 16:21:56.520 **********
-16:21:54.482 
-16:21:54.482 
-16:21:54.977 16:21:57.014 Master is requesting slave shutdown
-16:21:54.977 16:21:57.014 Java Heap in MB. max:  910.500; current:  381.000; used:  220.581; free:  160.419
+18:11:38.004 18:11:40.086 task_run_all(): 9 tasks
+18:12:38.028 18:12:40.110 Ended WT_task
+18:12:38.228 18:12:40.310 Interrupts issued for tasks WG_task: 11
+18:12:38.228 18:12:40.311 Sent 2 interrupts to 2 waiting IO_task threads
+18:12:38.229 18:12:40.311 Java Heap in MB. max:  910.500; current:  284.000; used:   44.154; free:  239.846
+18:12:38.229 18:12:40.312 Maximum native memory allocation:      262,144; Current allocation:            0
+18:12:38.230 18:12:40.312 End of run
+18:12:38.230 18:12:40.312 **********
+18:12:38.230 
+18:12:38.230 
+18:12:38.652 18:12:40.734 Master is requesting slave shutdown
+18:12:38.660 18:12:40.735 Java Heap in MB. max:  910.500; current:  284.000; used:   44.154; free:  239.846

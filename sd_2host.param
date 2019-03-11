@@ -1,0 +1,37 @@
+
+*
+* Copyright (c) 2000, 2012, Oracle and/or its affiliates. All rights reserved.
+*
+
+*
+* Author: Henk Vandenbergh.
+*
+
+
+* Example 5: Simple multi-host parameter file.
+* This test does a three second 4k read test from two hosts against the same file.
+
+* The 'vdbench=' parameter is only needed when Vdbench resides in a different directory on the remote system.
+
+
+#hd=default,vdbench=/root/vdbench50407,user=root
+hd=default,vdbench=/root/vdbench50407,user=root,shell=ssh,master=10.233.233.72
+
+hd=n1,system=10.233.233.72
+hd=n2,system=10.233.233.37
+hd=n3,system=10.233.233.146
+hd=n4,system=10.233.233.39
+hd=n5,system=10.233.233.253
+hd=n6,system=10.233.233.187
+hd=n7,system=10.233.233.188
+hd=n8,system=10.233.233.211
+
+
+sd=sd_var,host=*,lun=/dev/vda3,openflags=directio
+sd=sd_varlog,host=*,lun=/dev/vda6,openflags=directio
+
+#wd=wd1,sd=sd*,rdpct=100,xf=128k
+wd=wd1,sd=sd*,rdpct=0,xf=128k
+
+rd=rd1,wd=wd1,el=60,in=1,io=max,openflags=o_direct
+

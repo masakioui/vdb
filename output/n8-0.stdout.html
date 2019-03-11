@@ -1,53 +1,45 @@
 <title>Vdbench output/n8-0.stdout.html</title><pre>
 stdout/stderr for slave=n8-0
 
-16:16:46.651 16:16:47.429 SlaveJvm execution parameter:  '-m 10.233.233.72'
-16:16:46.651 16:16:47.430 SlaveJvm execution parameter:  '-n 10.233.233.211-17-190308-16.16.45.711'
-16:16:46.651 16:16:47.430 SlaveJvm execution parameter:  '-l n8-0'
-16:16:46.651 16:16:47.430 SlaveJvm execution parameter:  '-p 5570'
-16:16:46.651 16:16:47.430 SlaveJvm positional parameter: 'SlaveJvm'
-16:16:46.765 16:16:47.543 successfully connected to master 10.233.233.72
-16:16:46.765 16:16:47.544 Connection to 10.233.233.72 using port 5570 successful
-16:16:46.826 16:16:47.605 ticks_per_second: 100
-16:16:46.833 16:16:47.611 execute(): ls -l /var/log/oceanstor
-16:16:46.854 16:16:47.633 Configuration interpretation took 0.03 seconds
+18:11:36.314 18:11:37.114 SlaveJvm execution parameter:  '-m 10.233.233.72'
+18:11:36.314 18:11:37.115 SlaveJvm execution parameter:  '-n 10.233.233.211-16-190308-18.11.35.399'
+18:11:36.314 18:11:37.115 SlaveJvm execution parameter:  '-l n8-0'
+18:11:36.314 18:11:37.115 SlaveJvm execution parameter:  '-p 5570'
+18:11:36.314 18:11:37.115 SlaveJvm positional parameter: 'SlaveJvm'
+18:11:36.434 18:11:37.234 successfully connected to master 10.233.233.72
+18:11:36.434 18:11:37.235 Connection to 10.233.233.72 using port 5570 successful
+18:11:36.505 18:11:37.305 ticks_per_second: 100
+18:11:36.521 18:11:37.322 Configuration interpretation took 0.02 seconds
 
-Link to Run Definitions:         <A HREF="#_305623748">rd1 For loops: None</A>
+Link to Run Definitions:         <A HREF="#_992136656">random_write For loops: None</A>
 
-16:16:47.031 16:16:47.810 Beginning of run setup
-16:16:47.031 16:16:47.811 **********************
-16:16:47.031 
-16:16:47.031 
-16:16:47.049 16:16:47.828 File '/var/log/messages.1' does not exist. Monitoring bypassed
-16:16:47.088 16:16:47.867 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
-16:16:47.114 16:16:47.893 Completed the creation of the directory list for /var/log/oceanstor: 176 directories.
-16:16:47.931 16:16:48.710 Generated 66,000 file names; total anchor size: 200.862g (215,674,196,617)
-16:16:47.931 16:16:48.710 During anchor creation for anchor=/var/log/oceanstor there were 176 directories and 66000 files
-16:16:47.931 16:16:48.710 Completed initializeFileAnchor for fsd1: 0.84
-16:16:47.941 16:16:48.720 Started 4 threads for fwd=fwd1,fsd=fsd1,operation=read
-16:16:47.941 16:16:48.720 Started 4 FwgThreads for rd=rd1 For loops: None
-16:16:47.941 16:16:48.720 Waiting for task synchronization
-16:16:47.941 16:16:48.720 Requesting full garbage collection
-16:16:47.942 16:16:48.721 GcTracker: cum:   5 intv:  5 ms:     118 mss:  0.00% Heap_MB max:   911 curr:   221 used:    52 free:   168 
-16:16:48.011 16:16:48.790 GcTracker: cum:   7 intv:  2 ms:      67 mss:  0.00% Heap_MB max:   911 curr:   362 used:    27 free:   334 
-16:16:48.011 16:16:48.790 task_wait_start_complete() end
+18:11:36.738 18:11:37.539 Beginning of run setup
+18:11:36.738 18:11:37.539 **********************
+18:11:36.738 
+18:11:36.738 
+18:11:36.759 18:11:37.560 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:11:36.856 18:11:37.657 Opening sd=sd_var,lun=/dev/vda3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:11:36.871 18:11:37.672 Started 3 Workload Generator threads.
+18:11:36.921 18:11:37.721 Started  1 i/o threads for sd_var
+18:11:36.921 18:11:37.721 Started a total of  1 i/o threads.
+18:11:36.921 18:11:37.721 Waiting for task synchronization
+18:11:36.921 18:11:37.721 task_wait_start_complete: IO_task /dev/vda3 1
+18:11:37.121 18:11:37.921 Requesting full garbage collection
+18:11:37.121 18:11:37.922 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   159 free:    93 
+18:11:37.214 18:11:38.014 GcTracker: cum:   2 intv:  2 ms:      90 mss:  0.00% Heap_MB max:   911 curr:   252 used:    17 free:   235 
+18:11:37.214 18:11:38.014 task_wait_start_complete() end
 
-<a name="_305623748"></a><i><b>16:16:49.001 Starting RD=rd1; elapsed=300; fwdrate=max. For loops: None</b></i>
+<a name="_992136656"></a><i><b>18:11:38.002 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
 
-16:16:49.003 16:16:49.782 task_run_all(): 5 tasks
-16:20:02.058 16:20:02.836 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
-16:20:02.058 16:20:02.837 sendMessageToConsole: /var/log/messages: Mar  8 16:20:02 host-10-233-233-211 systemd: Started Session 186 of user root.
-16:20:02.058 16:20:02.837 sendMessageToConsole: 
-16:21:49.131 16:21:49.910 
-16:21:49.131 16:21:49.910 Miscellaneous statistics:
-16:21:49.131 16:21:49.911 READ_OPENS          Files opened for read activity:              39,886
-16:21:49.131 16:21:49.911 FILE_CLOSES         Close requests:                              39,886
-16:21:49.131 16:21:49.911 
-16:21:49.131 16:21:49.911 Java Heap in MB. max:  910.500; current:  355.000; used:  273.281; free:   81.719
-16:21:49.131 16:21:49.911 Maximum native memory allocation:       16,384; Current allocation:       16,384
-16:21:49.131 16:21:49.911 End of run
-16:21:49.131 16:21:49.911 **********
-16:21:49.131 
-16:21:49.131 
-16:21:54.977 16:21:55.756 Master is requesting slave shutdown
-16:21:54.977 16:21:55.757 Java Heap in MB. max:  910.500; current:  355.000; used:  273.281; free:   81.719
+18:11:38.004 18:11:38.805 task_run_all(): 5 tasks
+18:12:38.028 18:12:38.829 Ended WT_task
+18:12:38.228 18:12:39.029 Interrupts issued for tasks WG_task: 5
+18:12:38.228 18:12:39.029 Sent 1 interrupts to 1 waiting IO_task threads
+18:12:38.229 18:12:39.030 Java Heap in MB. max:  910.500; current:  251.500; used:   34.598; free:  216.902
+18:12:38.229 18:12:39.030 Maximum native memory allocation:      131,072; Current allocation:            0
+18:12:38.229 18:12:39.030 End of run
+18:12:38.229 18:12:39.030 **********
+18:12:38.229 
+18:12:38.229 
+18:12:38.653 18:12:39.453 Master is requesting slave shutdown
+18:12:38.662 18:12:39.454 Java Heap in MB. max:  910.500; current:  251.500; used:   34.598; free:  216.902

@@ -1,27 +1,27 @@
 <title>Vdbench output/config.html</title><pre>
 Output from script /root/vdbench50407/linux/config.sh: 
 
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>uname -a
 Linux host-10-233-233-72 3.10.0-957.el7.x86_64 #1 SMP Thu Oct 4 20:48:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>ifconfig -a
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.233.233.72  netmask 255.255.255.0  broadcast 10.233.233.255
         inet6 fe80::f816:3eff:fe4a:33f3  prefixlen 64  scopeid 0x20<link>
         ether fa:16:3e:4a:33:f3  txqueuelen 1000  (Ethernet)
-        RX packets 674565  bytes 4635932890 (4.3 GiB)
+        RX packets 755892  bytes 4650724312 (4.3 GiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 577993  bytes 52734204 (50.2 MiB)
+        TX packets 682764  bytes 65008181 (61.9 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 34868  bytes 5782080 (5.5 MiB)
+        RX packets 60767  bytes 9175799 (8.7 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 34868  bytes 5782080 (5.5 MiB)
+        TX packets 60767  bytes 9175799 (8.7 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -39,10 +39,10 @@ virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>id
 uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>mount
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -79,41 +79,41 @@ sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
 tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=13185732k,mode=700,uid=42,gid=42)
 /root/rhel-server-7.6-x86_64-dvd.iso on /mnt/repo-cdrom type iso9660 (ro,relatime)
 tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=13185732k,mode=700,uid=1000,gid=1000)
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>memory
 MemTotal:       131857308 kB
-MemFree:         1071296 kB
-MemAvailable:   129401220 kB
-Buffers:            2872 kB
-Cached:         125258516 kB
+MemFree:         1245576 kB
+MemAvailable:   129343900 kB
+Buffers:            2140 kB
+Cached:         127612912 kB
 SwapCached:            0 kB
-Active:          5180992 kB
-Inactive:       120563712 kB
-Active(anon):     484024 kB
-Inactive(anon):    12088 kB
-Active(file):    4696968 kB
-Inactive(file): 120551624 kB
+Active:         69314472 kB
+Inactive:       58862200 kB
+Active(anon):     562324 kB
+Inactive(anon):    12096 kB
+Active(file):   68752148 kB
+Inactive(file): 58850104 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:             0 kB
 SwapFree:              0 kB
-Dirty:                64 kB
+Dirty:                88 kB
 Writeback:             0 kB
-AnonPages:        421972 kB
-Mapped:           110588 kB
+AnonPages:        531836 kB
+Mapped:            69464 kB
 Shmem:             12800 kB
-Slab:            4092852 kB
-SReclaimable:    3871228 kB
-SUnreclaim:       221624 kB
-KernelStack:       14064 kB
-PageTables:        23124 kB
+Slab:            1505944 kB
+SReclaimable:    1285968 kB
+SUnreclaim:       219976 kB
+KernelStack:       14128 kB
+PageTables:        23720 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    65928652 kB
-Committed_AS:    3718864 kB
+Committed_AS:    4142908 kB
 VmallocTotal:   34359738367 kB
-VmallocUsed:      264400 kB
+VmallocUsed:      264360 kB
 VmallocChunk:   34359461884 kB
 HardwareCorrupted:     0 kB
 AnonHugePages:    172032 kB
@@ -128,23 +128,30 @@ DirectMap4k:      280064 kB
 DirectMap2M:    12302336 kB
 DirectMap1G:    123731968 kB
               total        used        free      shared  buff/cache   available
-Mem:      131857308     1431772     1071296       12800   129354240   129401220
-Low:      131857308   130786012     1071296
+Mem:      131857308     1490736     1245576       12800   129120996   129343900
+Low:      131857308   130611732     1245576
 High:             0           0           0
 Swap:             0           0           0
-Fri Mar 8 16:16:46 +07 2019
+Fri Mar 8 18:11:36 +07 2019
 >>>>>ps -ef | grep -i vdb
-root     33767 32587  0 16:16 pts/0    00:00:00 /bin/bash ./vdbench -f multihost.param
-root     33769 33767 99 16:16 pts/0    00:00:01 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f multihost.param
-root     33834 33769  0 16:16 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.16.45.711 -l n1-0 -p 5570
-root     33838 33834 48 16:16 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-16.16.45.711 -l n1-0 -p 5570
-root     33841 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.37 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.37-11-190308-16.16.45.711 -l n2-0 -p 5570
-root     33880 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-12-190308-16.16.45.711 -l n3-0 -p 5570
-root     33888 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.39 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.39-13-190308-16.16.45.711 -l n4-0 -p 5570
-root     33911 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-14-190308-16.16.45.711 -l n5-0 -p 5570
-root     33916 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.187 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.187-15-190308-16.16.45.711 -l n6-0 -p 5570
-root     33921 33769  1 16:16 pts/0    00:00:00 ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-16-190308-16.16.45.711 -l n7-0 -p 5570
-root     33926 33769  0 16:16 pts/0    00:00:00 ssh 10.233.233.211 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.211-17-190308-16.16.45.711 -l n8-0 -p 5570
-root     33980 33769  0 16:16 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/output n1 n2 n3 n4 n5 n6 n7 n8
-root     33996 33980  0 16:16 pts/0    00:00:00 grep -i vdb
+root     48716 32587  0 18:11 pts/0    00:00:00 /bin/bash ./vdbench -f sd_8host_random_write.param
+root     48718 48716 55 18:11 pts/0    00:00:01 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f sd_8host_random_write.param
+root     48780 48718  0 18:11 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-18.11.35.399 -l n1-0 -p 5570
+root     48784 48780 48 18:11 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.72 -n 10.233.233.72-10-190308-18.11.35.399 -l n1-0 -p 5570
+root     48787 48718  0 18:11 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.72-17-190308-18.11.35.399 -l n1-1 -p 5570
+root     48826 48787 40 18:11 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.72 -n 10.233.233.72-17-190308-18.11.35.399 -l n1-1 -p 5570
+root     48863 48718  2 18:11 pts/0    00:00:00 ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-11-190308-18.11.35.399 -l n3-0 -p 5570
+root     48873 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.146 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.146-18-190308-18.11.35.399 -l n3-1 -p 5570
+root     48897 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.39 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.39-12-190308-18.11.35.399 -l n4-0 -p 5570
+root     48920 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.39 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.39-19-190308-18.11.35.399 -l n4-1 -p 5570
+root     48925 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-13-190308-18.11.35.399 -l n5-0 -p 5570
+root     48930 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.253 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.253-20-190308-18.11.35.399 -l n5-1 -p 5570
+root     48935 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.187 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.187-14-190308-18.11.35.399 -l n6-0 -p 5570
+root     48940 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.187 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.187-21-190308-18.11.35.399 -l n6-1 -p 5570
+root     48945 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-15-190308-18.11.35.399 -l n7-0 -p 5570
+root     48950 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.188 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.188-22-190308-18.11.35.399 -l n7-1 -p 5570
+root     48955 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.211 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.211-16-190308-18.11.35.399 -l n8-0 -p 5570
+root     48960 48718  1 18:11 pts/0    00:00:00 ssh 10.233.233.211 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.72 -n 10.233.233.211-23-190308-18.11.35.399 -l n8-1 -p 5570
+root     48987 48718  0 18:11 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/output n1 n3 n4 n5 n6 n7 n8
+root     49003 48987  0 18:11 pts/0    00:00:00 grep -i vdb
 

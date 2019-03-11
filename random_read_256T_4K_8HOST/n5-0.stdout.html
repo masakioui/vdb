@@ -1,0 +1,51 @@
+<title>Vdbench random_read_256T_4K_8HOST/n5-0.stdout.html</title><pre>
+stdout/stderr for slave=n5-0
+
+16:27:55.137 16:27:55.713 SlaveJvm execution parameter:  '-m 10.233.233.72'
+16:27:55.137 16:27:55.714 SlaveJvm execution parameter:  '-n 10.233.233.253-14-190308-16.27.53.864'
+16:27:55.137 16:27:55.714 SlaveJvm execution parameter:  '-l n5-0'
+16:27:55.137 16:27:55.714 SlaveJvm execution parameter:  '-p 5570'
+16:27:55.137 16:27:55.714 SlaveJvm positional parameter: 'SlaveJvm'
+16:27:55.234 16:27:55.809 successfully connected to master 10.233.233.72
+16:27:55.234 16:27:55.811 Connection to 10.233.233.72 using port 5570 successful
+16:27:55.358 16:27:55.935 ticks_per_second: 100
+16:27:55.367 16:27:55.944 execute(): ls -l /var/log/oceanstor
+16:27:55.389 16:27:55.966 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_305623748">rd1 For loops: None</A>
+
+16:27:55.559 16:27:56.137 Beginning of run setup
+16:27:55.559 16:27:56.137 **********************
+16:27:55.559 
+16:27:55.559 
+16:27:55.574 16:27:56.152 File '/var/log/messages.1' does not exist. Monitoring bypassed
+16:27:55.616 16:27:56.193 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+16:27:55.642 16:27:56.219 Completed the creation of the directory list for /var/log/oceanstor: 176 directories.
+16:27:56.374 16:27:56.951 Generated 66,000 file names; total anchor size: 201.229g (216,067,923,845)
+16:27:56.374 16:27:56.951 During anchor creation for anchor=/var/log/oceanstor there were 176 directories and 66000 files
+16:27:56.375 16:27:56.952 Completed initializeFileAnchor for fsd1: 0.76
+16:27:56.387 16:27:56.964 Started 32 threads for fwd=fwd1,fsd=fsd1,operation=read
+16:27:56.387 16:27:56.964 Started 32 FwgThreads for rd=rd1 For loops: None
+16:27:56.387 16:27:56.965 Waiting for task synchronization
+16:27:56.387 16:27:56.965 Requesting full garbage collection
+16:27:56.388 16:27:56.965 GcTracker: cum:   5 intv:  5 ms:      75 mss:  0.00% Heap_MB max:   911 curr:   221 used:    56 free:   164 
+16:27:56.453 16:27:57.031 GcTracker: cum:   7 intv:  2 ms:      64 mss:  0.00% Heap_MB max:   911 curr:   360 used:    27 free:   333 
+16:27:56.453 16:27:57.031 task_wait_start_complete() end
+
+<a name="_305623748"></a><i><b>16:27:57.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+16:27:57.003 16:27:57.580 task_run_all(): 33 tasks
+16:28:57.151 16:28:57.722 
+16:28:57.152 16:28:57.722 Miscellaneous statistics:
+16:28:57.154 16:28:57.722 READ_OPENS          Files opened for read activity:              18,105
+16:28:57.154 16:28:57.722 FILE_BUSY           File busy:                                       14
+16:28:57.154 16:28:57.722 FILE_CLOSES         Close requests:                              18,105
+16:28:57.154 16:28:57.722 
+16:28:57.154 16:28:57.723 Java Heap in MB. max:  910.500; current:  409.500; used:  243.849; free:  165.651
+16:28:57.155 16:28:57.723 Maximum native memory allocation:      131,072; Current allocation:      131,072
+16:28:57.155 16:28:57.723 End of run
+16:28:57.155 16:28:57.723 **********
+16:28:57.155 
+16:28:57.155 
+16:28:58.488 16:28:59.065 Master is requesting slave shutdown
+16:28:58.488 16:28:59.066 Java Heap in MB. max:  910.500; current:  409.500; used:  243.849; free:  165.651

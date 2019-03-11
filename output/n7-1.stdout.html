@@ -1,0 +1,42 @@
+<title>Vdbench output/n7-1.stdout.html</title><pre>
+stdout/stderr for slave=n7-1
+
+18:11:36.253 18:11:36.990 SlaveJvm execution parameter:  '-m 10.233.233.72'
+18:11:36.253 18:11:36.991 SlaveJvm execution parameter:  '-n 10.233.233.188-22-190308-18.11.35.399'
+18:11:36.253 18:11:36.991 SlaveJvm execution parameter:  '-l n7-1'
+18:11:36.253 18:11:36.991 SlaveJvm execution parameter:  '-p 5570'
+18:11:36.253 18:11:36.991 SlaveJvm positional parameter: 'SlaveJvm'
+18:11:36.377 18:11:37.114 successfully connected to master 10.233.233.72
+18:11:36.377 18:11:37.115 Connection to 10.233.233.72 using port 5570 successful
+
+Link to Run Definitions:         <A HREF="#_992136656">random_write For loops: None</A>
+
+18:11:36.766 18:11:37.504 Beginning of run setup
+18:11:36.766 18:11:37.504 **********************
+18:11:36.766 
+18:11:36.766 
+18:11:36.887 18:11:37.625 Opening sd=sd_varlog,lun=/dev/vda6; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:11:36.902 18:11:37.640 Started 3 Workload Generator threads.
+18:11:36.951 18:11:37.689 Started  1 i/o threads for sd_varlog
+18:11:36.951 18:11:37.690 Started a total of  1 i/o threads.
+18:11:36.951 18:11:37.690 Waiting for task synchronization
+18:11:36.951 18:11:37.690 task_wait_start_complete: IO_task /dev/vda6 1
+18:11:37.152 18:11:37.890 Requesting full garbage collection
+18:11:37.153 18:11:37.891 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   156 free:    95 
+18:11:37.233 18:11:37.971 GcTracker: cum:   2 intv:  2 ms:      77 mss:  0.00% Heap_MB max:   911 curr:   252 used:    17 free:   235 
+18:11:37.233 18:11:37.971 task_wait_start_complete() end
+
+<a name="_992136656"></a><i><b>18:11:38.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+18:11:38.004 18:11:38.743 task_run_all(): 5 tasks
+18:12:38.029 18:12:38.766 Ended WT_task
+18:12:38.228 18:12:38.967 Interrupts issued for tasks WG_task: 5
+18:12:38.229 18:12:38.967 Sent 1 interrupts to 1 waiting IO_task threads
+18:12:38.229 18:12:38.968 Java Heap in MB. max:  910.500; current:  251.500; used:   33.756; free:  217.744
+18:12:38.230 18:12:38.968 Maximum native memory allocation:      131,072; Current allocation:            0
+18:12:38.230 18:12:38.968 End of run
+18:12:38.230 18:12:38.968 **********
+18:12:38.230 
+18:12:38.230 
+18:12:38.652 18:12:39.391 Master is requesting slave shutdown
+18:12:38.653 18:12:39.391 Java Heap in MB. max:  910.500; current:  251.500; used:   33.756; free:  217.744

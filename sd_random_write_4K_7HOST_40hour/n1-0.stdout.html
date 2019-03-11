@@ -1,0 +1,49 @@
+<title>Vdbench sd_random_write_4K_7HOST_40hour/n1-0.stdout.html</title><pre>
+stdout/stderr for slave=n1-0
+
+18:25:50.814 18:25:50.813 SlaveJvm execution parameter:  '-m 10.233.233.72'
+18:25:50.815 18:25:50.814 SlaveJvm execution parameter:  '-n 10.233.233.72-10-190308-18.25.50.492'
+18:25:50.815 18:25:50.814 SlaveJvm execution parameter:  '-l n1-0'
+18:25:50.815 18:25:50.814 SlaveJvm execution parameter:  '-p 5570'
+18:25:50.815 18:25:50.814 SlaveJvm positional parameter: 'SlaveJvm'
+18:25:50.976 18:25:50.975 successfully connected to master 10.233.233.72
+18:25:50.976 18:25:50.976 Connection to 10.233.233.72 using port 5570 successful
+18:25:51.559 18:25:51.559 ticks_per_second: 100
+18:25:51.578 18:25:51.577 Configuration interpretation took 0.02 seconds
+
+Link to Run Definitions:         <A HREF="#_992136656">random_write For loops: None</A>
+
+18:25:51.780 18:25:51.780 Beginning of run setup
+18:25:51.780 18:25:51.780 **********************
+18:25:51.780 
+18:25:51.780 
+18:25:51.781 18:25:51.781 File '/var/log/messages' does not exist. Monitoring bypassed
+18:25:51.781 18:25:51.781 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:25:51.899 18:25:51.899 Opening sd=sd_var,lun=/dev/vda3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:25:51.901 18:25:51.901 Opening sd=sd_varlog,lun=/dev/vda6; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+18:25:51.914 18:25:51.914 Started 6 Workload Generator threads.
+18:25:51.964 18:25:51.964 Started  1 i/o threads for sd_varlog
+18:25:51.964 18:25:51.964 Started  1 i/o threads for sd_var
+18:25:51.965 18:25:51.964 Started a total of  2 i/o threads.
+18:25:51.965 18:25:51.964 Waiting for task synchronization
+18:25:51.965 18:25:51.965 task_wait_start_complete: IO_task /dev/vda6 1
+18:25:52.165 18:25:52.165 Requesting full garbage collection
+18:25:52.166 18:25:52.166 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   160 free:    91 
+18:25:52.205 18:25:52.205 GcTracker: cum:   2 intv:  2 ms:      37 mss:  0.00% Heap_MB max:   911 curr:   252 used:    17 free:   235 
+18:25:52.205 18:25:52.205 task_wait_start_complete() end
+
+<a name="_992136656"></a><i><b>18:25:53.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=144000; For loops: None</b></i>
+
+18:25:53.003 18:25:53.003 task_run_all(): 9 tasks
+10:25:53.237 10:25:53.236 Interrupts issued for tasks WG_task: 12
+10:25:53.237 10:25:53.237 WT Task interrupted at put
+10:25:53.237 10:25:53.237 Ended WT_task
+10:25:53.337 10:25:53.337 Sent 2 interrupts to 2 waiting IO_task threads
+10:25:53.338 10:25:53.338 Java Heap in MB. max:  910.500; current:  254.500; used:   47.642; free:  206.858
+10:25:53.338 10:25:53.338 Maximum native memory allocation:      262,144; Current allocation:            0
+10:25:53.338 10:25:53.338 End of run
+10:25:53.338 10:25:53.338 **********
+10:25:53.338 
+10:25:53.338 
+10:25:54.232 10:25:54.232 Master is requesting slave shutdown
+10:25:54.233 10:25:54.232 Java Heap in MB. max:  910.500; current:  254.500; used:   47.653; free:  206.847
